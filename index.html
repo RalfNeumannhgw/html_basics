@@ -1,0 +1,2167 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <title>HTML-Kommandos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>HTML-Kommandos</h1>
+    <p>Wähle eine Kategorie, um die passenden Artikel zu sehen:</p>
+
+    <div id="filter-buttons"></div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Verlinkung">
+        <h3>&lt;a&gt; - Verlinkung</h3>
+        <p>
+            Das HTML-Kommando &lt;a&gt; steht für "anchor" (Anker) und wird verwendet, um Hyperlinks zu erstellen – also 
+                Verknüpfungen zu anderen Webseiten, Dateien, E-Mail-Adressen oder bestimmten Stellen innerhalb eines Dokuments.
+        </p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;p&gt;Link zu einer Webseite:&lt;/p&gt;
+&lt;a href="https://www.google.de"&gt;Google besuchen&lt;/a&gt;
+
+&lt;p&gt;Link zu einer E-Mail-Adresse&lt;/p&gt;
+&lt;a href="mailto:name@example.com"&gt;E-Mail senden&lt;/a&gt;
+
+&lt;p&gt;Link zu einem Abschnitt auf der gleichen Seite:&lt;/p&gt;
+&lt;a href="#abschnitt1&gt;Zum Abschnitt 1&lt;/a&gt;
+
+&lt;p&gt;Und später im Dokument&lt;/p&gt;
+&lt;h2 id="abschnitt1&gt;Abschnitt 1&lt;/h2&gt;
+</code></code>
+
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Link zu einer Webseite:</p>
+<a href="https://www.google.de">Google besuchen</a>
+<p>Link zu einer E-Mail-Adresse:</p>
+<a href="mailto:name@example.com">E-Mail senden</a>
+<p>Link zu einem Abschnitt auf der gleichen Seite:</p>
+<a href="#abschnitt1">Zum Abschnitt 1</a>
+<p>Und später im Dokument:</p>
+<h2 id="abschnitt1">Abschnitt 1</h2>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;abbr&gt; - Text & Inhalt</h3>
+        <p>
+            Kennzeichnet den Text innerhalb dieser Tags als Abkürzung. Eine längere Beschreibung kann über das Attribut
+            title angegeben werden.
+        </p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;p&gt;Die &lt;abbr title="HyperText Markup Language"&gt;HTML&lt;/abbr&gt; ist die Grundlage jeder Webseite.&lt;/p&gt;</code></pre>
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <p>Die <abbr title="HyperText Markup Language">HTML</abbr> ist die Grundlage jeder Webseite.</p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;acronym&gt; (veraltet) - Text & Inhalt</h3>
+        <p>Das HTML-Kommando &lt;acronym&gt; wurde früher verwendet, um Abkürzungen oder Akronyme in einem Text zu
+            kennzeichnen und bei Bedarf eine Erklärung als Tooltip anzuzeigen (über das title-Attribut).</p>
+        <p style="font-weight: bold;">Code:</p>
+        <code>&lt;p&gt;Die &lt;acronym title="Hypertext Markup Language"&gt;HTML&lt;/acronym&gt; ist die Sprache des Webs.&lt;/p></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <p>Die <acronym title="Hypertext Markup Language">HTML</acronym> ist die Sprache des Webs.</p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;address&gt; - Text & Inhalt</h3>
+        <p>
+            Das address-Tag wird verwendet, um Kontaktinformationen für den Autor oder Besitzer eines Dokuments oder
+            Artikels bereitzustellen.
+        </p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;address&gt;
+    Max Mustermann&lt;br&gt;
+    Musterstraße 1&lt;br&gt;
+    12345 Musterstadt&lt;br&gt;
+    &lt;a href="mailto:max@example.com"&gt;max@example.com&lt;/a&gt;
+&lt;/address&gt;
+</code></pre>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <address>
+            Max Mustermann<br>
+            Musterstraße 1<br>
+            12345 Musterstadt<br>
+            <a href="mailto:max@example.com">max@example.com</a>
+        </address>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Multimedia">
+        <h3>&lt;applet&gt; (veraltet) - Multimedia</h3>
+        <p>Das HTML-Kommando &lt;applet&gt; wurde verwendet, um Java-Applets direkt in eine HTML-Seite einzubetten –
+            also kleine Programme, die in der
+            Programmiersprache Java geschrieben sind und im Browser ausgeführt wurden. Code gibt die Java-Klasse an,
+            width und height legen die Größe des Applet-Fensters fest.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;applet code="MeineKlasse.class" width="300" height="300"&gt;
+Ihr Browser unterstützt kein Java.
+&lt;/applet&gt;</code></pre>
+
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <applet code="MeineKlasse.class" width="300" height="300">
+            Ihr Browser unterstützt kein Java.
+        </applet>
+
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Multimedia">
+        <h3>&lt;area&gt; - Multimedia</h3>
+        <p>
+            Das HTML-Tag area wird in Kombination mit dem map-Tag verwendet und dient dazu, interaktive Bereiche auf
+            einem Bild (Image Map) zu definieren. Diese Bereiche können anklickbar sein und zu verschiedenen Links
+            führen. area wird nicht alleinstehend genutzt, sondern immer innerhalb eines map-Elements, das dann mit
+            einem Bild (img) verknüpft wird.
+        </p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" usemap="#weltkarte" alt="Weltkarte" style="width: 10%;"&gt;
+
+&lt;map name="weltkarte">&gt;
+&lt;area shape="rect" coords="34,44,270,350" href="europa.html" alt="Europa"&gt;
+&lt;area shape="circle" coords="477,300,44" href="afrika.html" alt="Afrika"&gt;
+&lt;area shape="poly" coords="130,60,180,20,230,60,180,100" href="asien.html" alt="Asien"&gt;
+&lt;/map>&gt;</code></pre>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" usemap="#weltkarte"
+            alt="Weltkarte" style="width: 10%;">
+        <map name="weltkarte">
+            <area shape="rect" coords="34,44,270,350" href="europa.html" alt="Europa">
+            <area shape="circle" coords="477,300,44" href="afrika.html" alt="Afrika">
+            <area shape="poly" coords="130,60,180,20,230,60,180,100" href="asien.html" alt="Asien">
+        </map>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;article&gt; - Layout & Container</h3>
+        <p>Das HTML-Tag article ist ein semantisches Element, das verwendet wird, um einen eigenständigen, in sich
+            abgeschlossenen Inhaltsbereich darzustellen z.B. Blog-Beiträge; Zeitungsartikel; Forenbeiträge; Kommentare;
+            Produktbeschreibungen; News-Einträge. Kann innerhalb von section, main oder body stehen.</p>
+
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;article&gt;
+    &lt;h3>HTML5 Einführung&lt;/h3&gt;
+    &lt;p>HTML5 ist die aktuelle Version der Hypertext Markup Language und bietet viele neue semantische Tags.&lt;/p&gt;
+    &lt;footer&gt;
+        &lt;p&gt;Veröffentlicht am 30. April 2025 von Max Mustermann&lt;/p&gt;
+    &lt;/footer&gt;
+&lt;/article&gt;
+</pre></code>
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <article>
+            <h3>HTML5 Einführung</h3>
+            <p>HTML5 ist die aktuelle Version der Hypertext Markup Language und bietet viele neue semantische Tags.</p>
+            <footer>
+                <p>Veröffentlicht am 30. April 2025 von Max Mustermann</p>
+            </footer>
+        </article>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;aside&gt; - Layout & Container</h3>
+        <p>Das HTML-Tag aside ist ein semantisches Element, das verwendet wird, um zusätzliche Informationen
+            darzustellen, die indirekt mit dem Hauptinhalt der Seite oder eines Artikels zu tun haben. z.B.
+            Randbemerkungen oder Exkurse; Werbung; Autoreninfos; Linksammlungen; Zitate oder Zusatzinfos, die nicht im
+            direkten Lesefluss stehen</p>
+
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;article&gt;
+    &lt;h3>HTML5 Einführung&lt;/h3&gt;
+    &lt;p>HTML5 bietet viele neue semantische Elemente für strukturierte Webseiten.&lt;/p&gt;
+    &lt;aside&gt;
+        &lt;h3>Tipp&lt;/h3&gt;
+        &lt;p>Verwenden Sie semantische Tags wie &lt;code>&lt;article&gt;&lt;/code> oder &lt;code>&lt;section&gt;&lt;/code> für bessere Lesbarkeit und SEO.&lt;/p&gt;
+    &lt;/aside&gt;
+&lt;/article&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <article>
+            <h3>HTML5 Einführung</h3>
+            <p>HTML5 bietet viele neue semantische Elemente für strukturierte Webseiten.</p>
+
+            <aside>
+                <h3>Tipp</h3>
+                <p>Verwenden Sie semantische Tags wie <code>&lt;article&gt;</code> oder <code>&lt;section&gt;</code> für
+                    bessere Lesbarkeit und SEO.</p>
+            </aside>
+        </article>
+
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Multimedia">
+        <h3>&lt;audio&gt; - Multimedia</h3>
+        <p>Das HTML-Tag audio wird verwendet, um Audiodateien (z.B. Musik, Sprachaufnahmen, Soundeffekte) direkt in eine
+            Webseite einzubinden und im Browser abspielbar zu machen – ohne zusätzliche Plugins wie Flash. Wichtige
+            Attribute sind controls, autoplay, loop, muted, preload und src</p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;audio controls&gt;
+&lt;source src="just-relax-11157.mp3" type="audio/mpeg"&gt;
+Ihr Browser unterstützt das Audio-Element nicht.
+&lt;/audio&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <audio controls>
+            <source src="just-relax-11157.mp3" type="audio/mpeg">
+            Ihr Browser unterstützt das Audio-Element nicht.
+        </audio>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;b&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Tag b steht für "bold" (fett) und wird verwendet, um Text ohne besondere Betonung visuell fett
+            darzustellen. Mit Gewichtung wird strong verwendet.</p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;p&gt;
+&lt;b&gt;Hinweis:&lt;/b&gt; Bitte speichern Sie Ihre Arbeit regelmäßig.
+&lt;br&gt;
+&lt;strong>Warnung:&lt;/strong&gt; Wenn Sie den Computer ausschalten, ohne zu speichern, gehen alle Änderungen verloren!
+&lt;/p&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <p>
+            <b>Hinweis:</b> Bitte speichern Sie Ihre Arbeit regelmäßig.
+            <br>
+            <strong>Warnung:</strong> Wenn Sie den Computer ausschalten, ohne zu speichern, gehen alle Änderungen
+            verloren!
+        </p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Grundstruktur">
+
+        <h3>&lt;base&gt; - Grundstruktur</h3>
+        <p>Das HTML-Tag base wird im head-Bereich einer HTML-Seite verwendet, um eine Basis-URL oder ein Standard-Ziel
+            für Links und Ressourcen auf der Seite festzulegen.</p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;head&gt;
+&lt;base href="https://meine-seite.de/artikel/" target="_self"&gt;
+&lt;/head&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+<p>Keine Ansicht möglich, da es zur Grundstruktur gehört.</p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;basefont&gt; (veraltet) - Text & Inhalt</h3>
+        <p>Das HTML-Kommando &lt;basefont&gt; wurde früher verwendet, um die Standardschriftart, -größe und -farbe für
+            den gesamten Text auf einer HTML-Seite festzulegen. Der Text auf der gesamten Seite würde damit in Arial,
+            Größe 4
+            und blau dargestellt – sofern keine anderen Styles in den Elementen überschrieben wurden. Veraltet seit HTML
+            4.01
+            und entfernt in HTML5 &lt;basefont&gt; gilt als veraltet und wird nicht mehr unterstützt.
+
+            Es wurde durch CSS ersetzt, das wesentlich flexibler und standardkonform ist.</p>
+<pre><code>
+&lt;style&gt;
+body {
+    font-family: Verdana;
+    font-size: 16px;
+    color: blue;
+}
+&lt;/style&gt;
+</pre></code>
+
+
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>  &lt;basefont face="Verdana" size="4" color="blue"&gt;
+&lt;p&gt;Dieser Text ist blau, Größe 4 und in Verdana.&lt;/p&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <basefont face="Verdana" size="4" color="blue">
+        <p>Dieser Text ist blau, Größe 4 und in Verdana.</p>
+            
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;bdi&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Tag &lt;bdi&gt; steht für "Bi-Directional Isolation" (bidirektionale Isolierung). Es wird verwendet,
+            um einen Textabschnitt von der bidirektionalen Textausrichtung zu isolieren. Das bedeutet, dass der darin
+            enthaltene Text unabhängig von der globalen Textausrichtung auf der Seite behandelt wird, was besonders bei
+            Sprachen mit unterschiedlicher Schreibrichtung (z. B. von rechts nach links und von links nach rechts)
+            hilfreich ist.</p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;h4&gt;Beispiel für &lt;bdi&gt; im Body&lt;/h4&gt;
+&lt;p&gt;Hier sehen wir, wie der Text korrekt isoliert wird:&lt;/p&gt;
+<!-- Text mit gemischter Richtung --> 
+&lt;p&gt; Ohne bdi: اسم المستخدم: user123 و اسم آخر: admin456&lt;/p&gt;
+&lt;p&gt; Mit bdi: اسم المستخدم:  &lt;bdi>user123 &lt;/bdi&gt; و اسم آخر: &lt;bdi&gt;admin456&lt;/bdi&gt;&lt;/p&gt;
+
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <h4>Beispiel für &lt;bdi&gt; im Body</h4>
+        <p>Hier sehen wir, wie der Text korrekt isoliert wird:</p>
+        <p> Ohne bdi: اسم المستخدم: user123 و اسم آخر: admin456</p>
+        <p> Mit bdi: اسم المستخدم: <bdi>user123</bdi> و اسم آخر: <bdi>admin456</bdi></p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;bdo&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;bdo&gt; steht für "Bi-Directional Override" und wird
+            verwendet, um die Textschreibrichtung explizit zu überschreiben – unabhängig von der
+            natürlichen Richtung des Inhalts oder des umgebenden Kontexts.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+&lt;p style="font-weight: bold;">Ergebnis:&lt;/p&gt;
+&lt;p&gt;Normal: user123&lt;/p&gt;
+&lt;p&gt;Mit: <bdo dir="rtl">user123&lt;/bdo>&lt;/p&gt;
+</pre></code>
+
+        <p style="font-weight: bold;">Ergebnis:</p>
+        <p>Normal: user123</p>
+        <p>Mit: <bdo dir="rtl">user123</bdo></p>
+    </div>
+
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;big&gt; (veraltet) - Text & Inhalt</h3>
+        <p>Das HTML-Kommando &lt;big&gt; wurde verwendet, um Text etwas größer als die normale Schriftgröße darzustellen.
+                Veraltet in HTML5
+                &lt;big&gt; ist seit HTML5 veraltet. Moderne Websites verwenden CSS, um die Schriftgröße gezielt und
+                kontrolliert anzupassen.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+&lt;p&gt;Das ist ein &lt;big&gt;größerer&lt;/big&gt; Text.&lt;/p&gt;
+</pre></code>
+
+<p style="font-weight: bold;">Ergebnis:</p>
+        <p>Das ist ein <big>größerer</big> Text.</p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;blockquote&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;blockquote&gt; wird verwendet, um längere Zitate aus externen Quellen
+            darzustellen. Es hebt den zitierten Text semantisch und optisch hervor – typischerweise durch
+            Einrückung im Layout. Optional kannst du das cite-Element ergänzen.</p>
+        <p style="font-weight: bold;">Code:</p>
+        <pre><code>&lt;blockquote&gt;
+    Der Mensch ist, was er isst.&lt;cite&gt;– Ludwig Feuerbach&lt;/cite&gt;
+&lt;/blockquote&gt;
+
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <blockquote>
+        Der Mensch ist, was er isst.<cite>– Ludwig Feuerbach</cite>
+    </blockquote>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Grundstruktur">
+        <h3>&lt;body&gt; - Grundstruktur</h3>
+        <p>Das HTML-Kommando &lt;body&gt; definiert den sichtbaren Inhaltsbereich einer HTML-Seite – also alles, was im Browserfenster angezeigt wird: 
+            Texte, Bilder, Links, Tabellen, Formulare, Skripte und mehr.
+            Funktion von &lt;body&gt;:
+            Enthält den gesamten Seiteninhalt, der für die Nutzer sichtbar/interaktiv ist.
+            Ist ein Pflichtbestandteil eines HTML-Dokuments. Das &lt;body&gt;-Tag ist das Herzstück jeder Webseite.
+            Es umfasst alles, was die Besucher deiner Seite sehen und benutzen.
+            Muss genau einmal pro HTML-Dokument vorhanden sein.</p>
+
+            <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;body style="background-color: #f0f0f0; font-family: sans-serif;"y&gt;
+    &lt;h1>Willkommen!&lt;/h1y&gt;
+&lt;/body&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <p>Kein Ergebnis, es gehört zur Grundstruktur einer Webseite.</p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;br&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;br&gt; steht für "line break" (Zeilenumbruch) und wird verwendet, um einen manuellen Zeilenwechsel 
+            innerhalb von Texten zu erzwingen – ohne einen neuen Absatz zu starten. Nicht übermäßig verwenden – &lt;br&gt; ist kein 
+            Ersatz für CSS-Layout oder Absatzstrukturierung (&lt;p&gt;, &lt;div&gt;, etc.). Bei langen Texten sollte man stattdessen 
+            lieber semantische Tags wie &lt;p&gt; oder &lt;section&gt; einsetzen.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;p&gt;
+    Max Mustermann&lt;br&gt;
+    Musterstraße 1&lt;br&gt;
+    12345 Musterstadt
+&lt;/p&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <p>
+        Max Mustermann<br>
+        Musterstraße 1<br>
+        12345 Musterstadt
+      </p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->    
+    <div class="artikel" data-group="Formulare">
+        <h3>&lt;button&gt; - Formulare</h3>
+        <p>Das HTML-Element &lt;button&gt; wird verwendet, um einen interaktiven Button (Schaltfläche) auf einer Webseite zu erstellen. 
+            Es kann Klick-Aktionen auslösen – etwa zum Absenden eines Formulars, für JavaScript-Funktionen oder für eigene interaktive 
+            Zwecke.Vorteile gegenüber &lt;input type="button"&gt;: &lt;button&gt; kann beliebigen Inhalt enthalten: Text, HTML, Symbole, Bilder.
+            Folgende Attribute können gesetzt werden: submit (Standard in Formularen – sendet das Formular); reset	(Setzt Formularfelder 
+            zurück); button (Nur Button, keine Standardaktion)</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;form&gt;
+    &lt;input type="text" name="name" placeholder="Dein Name"&gt;
+    &lt;button type="submit"&gt;Senden&lt;/button&gt;
+&lt;/form&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <form>
+        <input type="text" name="name" placeholder="Dein Name">
+        <button type="submit">Senden</button>
+      </form>
+
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Multimedia">
+        <h3>&lt;canvas&gt; - Multimedia</h3>
+        <p>Das HTML-Element &lt;canvas&gt; ist ein Container für dynamische, scriptgesteuerte Grafiken. Es wird häufig verwendet, 
+            um 2D-Grafiken, Animationen, Diagramme oder sogar Spiele zu rendern. Der &lt;canvas&gt;-Tag allein stellt eine leere 
+            Zeichenfläche zur Verfügung, und die eigentliche Grafik wird mithilfe von JavaScript darauf gezeichnet. Zeichnen von 
+            Linien, Formen (Kreis, Rechteck, etc.); Grafiken und Animationen (z.B. Spiele, interaktive Grafiken); Diagramme und 
+            Visualisierungen (z.B. Balken-, Linien- oder Kreisdiagramme); Bildbearbeitung (z.B. Filter und Effekte)</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;canvas id="meinCanvas" width="500" height="500"&gt;&lt;/canvas&gt;
+
+&lt;script&gt;
+    const canvas = document.getElementById('meinCanvas');
+    const ctx = canvas.getContext('2d');  // 2D-Kontext für Zeichnen
+    
+    // Zeichne ein Rechteck
+    ctx.fillStyle = "blue";
+    ctx.fillRect(50, 50, 150, 100);
+    
+    // Zeichne einen Kreis
+    ctx.beginPath();
+    ctx.arc(300, 300, 50, 0, 2 * Math.PI);
+    ctx.fillStyle = "red";
+    ctx.fill();
+&lt;/script&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <canvas id="meinCanvas" width="250" height="250"></canvas>
+
+<script>
+  const canvas = document.getElementById('meinCanvas');
+  const ctx = canvas.getContext('2d');  // 2D-Kontext für Zeichnen
+
+  // Zeichne ein Rechteck
+  ctx.fillStyle = "blue";
+  ctx.fillRect(50, 50, 150, 100);
+
+  // Zeichne einen Kreis
+  ctx.beginPath();
+  ctx.arc(200, 200, 50, 0, 2 * Math.PI);
+  ctx.fillStyle = "red";
+  ctx.fill();
+</script>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;caption&gt; - Listen & Tabellen</h3>
+        <p>Das HTML-Tag &lt;caption&gt; wird verwendet, um einer Tabelle eine Überschrift zu geben. Es steht innerhalb des &lt;table&gt;-Elements 
+            und beschreibt, worum es in der Tabelle geht – ähnlich wie ein Titel.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;table border="1"&gt;
+    &lt;caption>Umsätze 2024&lt;/caption&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Monat&lt;/th&gt;
+        &lt;th&gt;Betrag&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td>Januar&lt;/td&gt;
+        &lt;td>€ 1.200&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <table border="1">
+        <caption>Umsätze 2024</caption>
+        <tr>
+          <th>Monat</th>
+          <th>Betrag</th>
+        </tr>
+        <tr>
+          <td>Januar</td>
+          <td>€ 1.200</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;center&gt; (veraltet) - Text & Inhalt</h3>
+        <p>Das HTML-Kommando &lt;center&gt; wurde verwendet, um Inhalte horizontal zu zentrieren – also z. B. Text oder Bilder 
+            in der Mitte der Seite oder eines Containers darzustellen. &lt;center&gt; ist seit HTML5 veraltet und wird 
+            nicht mehr empfohlen. Stattdessen soll CSS verwendet werden – es ist flexibler, sauberer und zukunftssicher.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;center&gt;
+    &lt;h2&gt;Willkommen auf meiner Seite&lt;/h2&gt;
+    &lt;img src="bild.jpg" alt="Beispielbild"&gt;
+&lt;/center&gt;
+</pre></code>
+
+<p style="font-weight: bold;">Ergebnis:</p>
+<center>
+    <h2>Willkommen auf meiner Seite</h2>
+    <img src="Burger.png" alt="Beispielbild" width="300">
+</center>
+
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;cite&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;cite&gt; wird verwendet, um eine Quelle oder den Titel eines Werks anzugeben – z.B. 
+            den Titel eines Buchs, Films, Artikels oder Songs. Es dient vor allem semantischen Zwecken, also zur 
+            besseren inhaltlichen Kennzeichnung.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;p&gt;Mein Lieblingsbuch ist &lt;cite&gt;Der Steppenwolf&lt;/cite&gt; von Hermann Hesse.&lt;/p&gt;
+</pre></code>
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <p>Mein Lieblingsbuch ist <cite>Der Steppenwolf</cite> von Hermann Hesse.</p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;code&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;code&gt; steht für Computer-Code – also Quelltext, Befehle, Variablen, Funktionen usw. 
+            Es wird verwendet, um programmiertechnischen Text im Fließtext oder in Blöcken semantisch zu kennzeichnen.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;p&gt;Verwenden Sie &lt;code&gt;sudo apt update&lt;/code&gt;, um die Paketliste zu aktualisieren.&lt;/p&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;col&gt;; &lt;colgroup&gt; - Listen & Tabellen</h3>
+        <p>Das HTML-Tag &lt;col&gt; (kurz für „column“) wird in Verbindung mit Tabellen verwendet, um Spalteneigenschaften 
+            innerhalb einer Tabelle zu definieren, insbesondere in Kombination mit dem <colgroup>-Tag.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>
+    &lt;table&gt;
+    &lt;colgroup&gt;
+    &lt;col style="background-color: #f2f2f2;"&gt;
+    &lt;col style="background-color: #d9edf7;"&gt;
+    &lt;col style="background-color: #dff0d8;"&gt;
+    &lt;/colgroup&gt;
+    &lt;tr&gt;
+    &lt;th&gt;Spalte 1&lt;/th&gt;
+    &lt;th&gt;Spalte 2&lt;/th&gt;
+    &lt;th&gt;Spalte 3&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+    &lt;td&gt;A1&lt;/td&gt;
+    &lt;td&gt;A2&lt;/td&gt;
+    &lt;td&gt;A3&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/table&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <table>
+        <colgroup>
+          <col style="background-color: #f2f2f2;">
+          <col style="background-color: #d9edf7;">
+          <col style="background-color: #dff0d8;">
+        </colgroup>
+        <tr>
+          <th>Spalte 1</th>
+          <th>Spalte 2</th>
+          <th>Spalte 3</th>
+        </tr>
+        <tr>
+          <td>A1</td>
+          <td>A2</td>
+          <td>A3</td>
+        </tr>
+      </table>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Formulare">
+        <h3>&lt;command&gt; (veraltet) - Formulare</h3>
+        <p>Das HTML-Element &lt;command&gt; war ursprünglich gedacht, um Befehle innerhalb von Kontextmenüs oder Toolbars 
+            zu definieren, ist aber veraltet und wird von den meisten modernen Browsern nicht mehr unterstützt. s sollte 
+            in Verbindung mit &lt;menu&gt; verwendet werden, um dem Benutzer Befehle zur Verfügung zu stellen – z.B. Menüeinträge, 
+            Buttons oder Checkboxen innerhalb eines Menüs.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;menu type="context" id="meinMenu"&gt;
+    &lt;command label="Kopieren" icon="copy.png" onclick="copyText()"&gt;
+    &lt;command label="Einfügen" icon="paste.png" onclick="pasteText()"&gt;
+&lt;/menu&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <menu type="context" id="meinMenu">
+        <command label="Kopieren" icon="copy.png" onclick="copyText()">
+        <command label="Einfügen" icon="paste.png" onclick="pasteText()">
+      </menu>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Formulare">
+        <h3>&lt;data&gt; - Formulare</h3>
+        <p>Das HTML-Element &lt;data&gt; dient dazu, maschinell lesbare Daten (z.B. IDs, Codes, numerische Werte) mit 
+            lesbarem Text zu verknüpfen. Es ist besonders nützlich, wenn du Inhalte sowohl für Menschen als auch für 
+            Maschinen (z.B. JavaScript, Suchmaschinen oder Screenreader) bereitstellen willst. Du könntest dann z.B. 
+            per JavaScript auf die value-Attribute zugreifen, um eine Auswahl zu speichern oder zu verarbeiten.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;ul&gt;
+    &lt;li&gt;&lt;data value="101"&gt;Laptop&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value="102"&gt;Tablet&lt;/data&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;data value="103"&gt;Smartphone&lt;/data&gt;&lt;/li&gt;
+&lt;/ul>
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <ul>
+        <li><data value="101">Laptop</data></li>
+        <li><data value="102">Tablet</data></li>
+        <li><data value="103">Smartphone</data></li>
+      </ul>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Formulare">
+        <h3>&lt;datalist&gt; - Formulare</h3>
+        <p>Das HTML-Element &lt;datalist&gt; dient dazu, eine Liste von vordefinierten Optionen für ein Eingabefeld bereitzustellen – 
+            ähnlich wie eine Auto-Vervollständigung. Es wird immer in Kombination mit einem &lt;input&gt; verwendet.</p>
+        <p style="font-weight: bold;">Code:</p>
+
+<pre><code>&lt;label for="browser"&gt;Wähle einen Browser:&lt;/label&gt;
+&lt;input list="browser-list" id="browser" name="browser"&gt;
+&lt;datalist id="browser-list"&gt;
+    &lt;option value="Chrome"&gt;
+    &lt;option value="Firefox"&gt;
+    &lt;option value="Edge"&gt;
+    &lt;option value="Safari"&gt;
+    &lt;option value="Opera"&gt;
+&lt;/datalist&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <label for="browser">Wähle einen Browser:</label>
+<input list="browser-list" id="browser" name="browser">
+
+<datalist id="browser-list">
+  <option value="Chrome">
+  <option value="Firefox">
+  <option value="Edge">
+  <option value="Safari">
+  <option value="Opera">
+</datalist>
+    </div>
+
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;dd&gt; - Listen & Tabellen</h3>
+        <p>Das HTML-Element &lt;dd&gt; steht für "description definition" und wird innerhalb von Definitionslisten (&lt;dl&gt;) verwendet. Es beschreibt den Begriff, der zuvor mit einem &lt;dt&gt;-Element („definition term“) eingeführt wurde.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Eine Auszeichnungssprache zur Strukturierung von Webseiten.&lt;/dd&gt;
+      
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Eine Sprache zur Gestaltung des Layouts und Designs von Webseiten.&lt;/dd&gt;
+      
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Eine Programmiersprache, mit der Webseiten interaktiv werden.&lt;/dd&gt;
+    &lt;/dl&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Eine Auszeichnungssprache zur Strukturierung von Webseiten.</dd>
+      
+        <dt>CSS</dt>
+        <dd>Eine Sprache zur Gestaltung des Layouts und Designs von Webseiten.</dd>
+      
+        <dt>JavaScript</dt>
+        <dd>Eine Programmiersprache, mit der Webseiten interaktiv werden.</dd>
+      </dl>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;del&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;del&gt; steht für "deleted" (gelöscht) und wird verwendet, um gelöschten oder nicht mehr gültigen Text auf einer Webseite darzustellen. Es ist besonders nützlich, um Änderungen in Texten kenntlich zu machen – etwa bei Überarbeitungen oder Preisänderungen.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;del datetime="2024-11-01T14:30:00Z"&gt;alter Inhalt&lt;/del&gt;
+    &lt;del cite="https://beispiel.de/aenderung"&gt;veralteter Text&lt;/del&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <del datetime="2024-11-01T14:30:00Z">alter Inhalt</del>
+<del cite="https://beispiel.de/aenderung">veralteter Text</del>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Interaktive Elemente">
+        <h3>&lt;details&gt; - Interaktive Elemente</h3>
+        <p>Das HTML-Element &lt;details&gt; dient dazu, einen Bereich mit zusätzlichen Informationen anzuzeigen, den der Benutzer auf- und zuklappen kann – ähnlich wie ein Akkordeon oder eine FAQ.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;details open&gt;
+    &lt;summary&gt;Details&lt;/summary&gt;
+    &lt;p&gt;Diese Infos sind beim Laden sichtbar.&lt;/p&gt;
+    &lt;/details&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <details open>
+        <summary>Details</summary>
+        <p>Diese Infos sind beim Laden sichtbar.</p>
+      </details>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;dfn&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Element &lt;dfn&gt; steht für "definition" und kennzeichnet den Begriff, der gerade definiert wird. Es wird in einem Satz verwendet, in dem ein neuer oder wichtiger Begriff eingeführt oder erklärt wird.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;p&gt;&lt;dfn title="Endliche Folge von Anweisungen"&gt;Algorithmus&lt;/dfn&gt; ist zentral in der Informatik.&lt;/p&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <p><dfn title="Endliche Folge von Anweisungen">Algorithmus</dfn> ist zentral in der Informatik.</p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Interaktive Elemente">
+        <h3>&lt;dialog&gt; - Interaktive Elemente</h3>
+        <p>Das HTML-Element &lt;dialog&gt; dient dazu, Dialogfenster oder modale Fenster in Webseiten zu erstellen – etwa für Pop-ups, Hinweisboxen, Formulare oder Bestätigungsabfragen.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;dialog id="meinDialog"&gt;
+    &lt;p&gt;Möchtest du fortfahren?&lt;/p&gt;
+    &lt;button onclick="document.getElementById('meinDialog').close()">Schließen&lt;/button&gt;
+    &lt;/dialog&gt;
+      
+      <button onclick="document.getElementById('meinDialog').showModal()">Dialog öffnen</button>
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <dialog id="meinDialog">
+        <p>Möchtest du fortfahren?</p>
+        <button onclick="document.getElementById('meinDialog').close()">Schließen</button>
+      </dialog>
+      
+      <button onclick="document.getElementById('meinDialog').showModal()">Dialog öffnen</button>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;dir&gt; (veraltet) - Listen & Tabellen</h3>
+        <p>Das HTML-Kommando &lt;dir&gt; steht für "directory" (Verzeichnis) und wurde ursprünglich verwendet, 
+            um eine Liste von Verzeichniseinträgen (z. B. Dateien oder Ordner) anzuzeigen – ähnlich wie 
+            eine ungeordnete Liste (&lt;ul&gt;) und wurde damit seit HTML 4.01 ersetzt .</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+&lt;dir&gt;
+  &lt;i&gt;Datei 1&lt;/li&lt;
+  &lt;li&gt;Datei 2&lt;/li&lt;
+  &lt;li>&gt;Ordner A&lt;/li&lt;
+&lt;/dir&lt;
+
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <dir>
+  <li>Datei 1</li>
+  <li>Datei 2</li>
+  <li>Ordner A</li>
+</dir>
+
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;div&gt; - Layout & Container</h3>
+        <p>Das HTML-Element &lt;div&gt; steht für "division" (Abschnitt) und ist ein blockweises Container-Element, das verwendet wird, um Inhalte zu gruppieren und zu strukturieren, insbesondere für Layout-Zwecke und CSS-Styling.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;div class="box"&gt;
+        Dies ist ein Div!
+        &lt;/div&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <div class="box">
+        Dies ist ein Div!
+      </div>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;dl&gt; - Listen & Tabellen</h3>
+        <p>Das HTML-Element &lt;dl&gt; steht für "description list" (Beschreibungs-Liste) und wird verwendet, um eine Liste von Begriffen und deren zugehörigen Erklärungen oder Beschreibungen darzustellen.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Hypertext Markup Language, die Standard-Auszeichnungssprache für Webseiten.&lt;/dd&gt;
+      
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Cascading Style Sheets, eine Sprache zur Gestaltung von Webseiten.&lt;/dd&gt;
+      
+    &lt;dt&gt;JavaScript&lt;/dt&gt;
+    &lt;dd&gt;Eine Programmiersprache, die verwendet wird, um Webseiten interaktiv zu gestalten.&lt;/dd&gt;
+    &lt;/dl&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Hypertext Markup Language, die Standard-Auszeichnungssprache für Webseiten.</dd>
+      
+        <dt>CSS</dt>
+        <dd>Cascading Style Sheets, eine Sprache zur Gestaltung von Webseiten.</dd>
+      
+        <dt>JavaScript</dt>
+        <dd>Eine Programmiersprache, die verwendet wird, um Webseiten interaktiv zu gestalten.</dd>
+      </dl>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Listen & Tabellen">
+        <h3>&lt;dt&gt; - Listen & Tabellen</h3>
+        <p>Das HTML-Element &lt;dt&gt; steht für "Definition Term" (Begriff) und gehört zur Beschreibungsliste (&lt;dl&gt;).</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>
+    &lt;dl&gt;
+    &lt;dt&gt;HTML&lt;/dt&gt;
+    &lt;dd&gt;Die Auszeichnungssprache für Webseiten.&lt;/dd&gt;
+      
+    &lt;dt&gt;CSS&lt;/dt&gt;
+    &lt;dd&gt;Die Gestaltungssprache für das Aussehen von Webseiten.&lt;/dd&gt;
+    &lt;/dl&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Die Auszeichnungssprache für Webseiten.</dd>
+      
+        <dt>CSS</dt>
+        <dd>Die Gestaltungssprache für das Aussehen von Webseiten.</dd>
+      </dl>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;em&gt; - Text & Inhalt</h3>
+        <p>Das HTML-Tag &lt;em&gt; steht für „emphasize“ (betonen) und wird verwendet, um inhaltliche Betonung auf ein Wort oder einen Satzteil zu legen.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;p&gt;Du solltest &lt;em&gt;jetzt&lt;/em&gt; damit anfangen.&lt;/p&gt;
+</pre></code>
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <p>Du solltest <em>jetzt</em> damit anfangen.</p>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Multimedia">
+        <h3>&lt;embed&gt; - Multimedia</h3>
+        <p>Das HTML-Tag &lt;embed&gt; wird verwendet, um externe Inhalte (z.B. Multimedia, PDFs, Flash, Videos, u.a.) direkt in eine Webseite einzubetten.
+
+            Zweck von &lt;embed&gt;:
+            Betten externe Ressourcen direkt im Browser ein.
+            
+            Wird oft für Inhalte genutzt, die nicht nativ zu HTML gehören (z.B. PDF-Viewer, SVG, Flash – heute veraltet).
+            Funktioniert als Container für nicht-HTML-Medieninhalte.
+            Moderne Alternativen (je nach Anwendungsfall):
+            &lt;video&gt; oder &lt;audio&gt; für Medien
+            &lt;iframe&gt; für Webseiten oder externe HTML
+            &lt;object&gt; für komplexere Einbettungen</p>
+
+            <table border="1">
+                <caption>Type Varianten</caption>
+                <tr><th>MIME-Typ</th><th>Beschreibung</th></tr>
+                <tr><td>application/pdf</td><td>PDF-Dokument</td></tr>
+                <tr><td>video/mp4</td><td>MP4-Videodatei</td></tr>
+                <tr><td>audio/mpeg</td><td>MP3-Audiodatei</td></tr>
+                <tr><td>application/x-shockwave-flash</td><td>Flash-Inhalte (veraltet)</td></tr>
+                <tr><td>image/svg+xml</td><td>Vektorbild, skalierbar ohne Qualitätsverluste</td></tr>
+                <tr><td>image/png</td><td>PNG-Grafiken</td></tr>
+                <tr><td>image/jpeg</td><td>.jpg, .jpeg	Komprimierte Fotos, kein Alpha</td></tr>
+                <tr><td>image/gif</td><td>.gif	Animierte oder einfache Bilder</td></tr>
+                <tr><td>image/webp</td><td>.webp	Moderne, komprimierte Alternative</td></tr>
+                <tr><td>image/avif</td><td>.avif	Sehr effiziente Komprimierung</td></tr>
+                <tr><td>image/bmp</td><td>.bmp	Unkomprimiertes Rasterbild</td></tr>
+                <tr><td>image/apng</td><td>.apng	Animiertes PNG</td></tr>
+                <tr><td>image/x-icon</td><td>.ico	Icons und Favicons</td></tr>
+                <tr><td>image/tiff</td><td>.tif, .tiff	Hochqualitative Bildformate</td></tr>       
+                <tr><td>application/xml</td><td>XML-Dateien</td></tr>
+                <tr><td>text/html</td><td>HTML-Inhalte</td></tr>
+                <tr><td>application/json</td><td>JSON-Dateien (Textinhalt wird dargestellt)</td></tr>
+                <tr><td>video/webm</td><td>WebM-Videodatei</td></tr>
+            </table>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;embed src="Burger.png" type="image/png" width="600"&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <embed src="Burger.png" type="image/png" width="200">
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Formulare">
+        <h3>&lt;fieldset&gt; - Formulare</h3>
+        <p>Das HTML-Kommando &lt;fieldset&gt; wird verwendet, um Gruppen von Formularfeldern logisch zusammenzufassen. Es dient sowohl der Strukturierung als auch der Barrierefreiheit eines Formulars.
+
+            Zweck von &lt;fieldset&gt;:
+            Gruppiert verwandte Eingabefelder (z.B. Adressdaten oder Login-Informationen).
+            Wird meist zusammen mit &lt;legend&gt; verwendet, um der Gruppe eine sichtbare Überschrift zu geben.
+            Verbessert die Zugänglichkeit für Screenreader.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;form&gt;
+    &lt;fieldset&gt;
+        &lt;legend>Persönliche Daten&lt;/legend&gt;
+        &lt;label for="name">Name:&lt;/label&gt;
+        &lt;input type="text" id="name" name="name"&gt;
+         
+        &lt;label for="email">E-Mail:&lt;/label&gt;
+        &lt;input type="email" id="email" name="email"&gt;
+    &lt;/fieldset&gt;
+&lt;/form&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <form>
+        <fieldset>
+          <legend>Persönliche Daten</legend>
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email">
+        </fieldset>
+      </form>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;figcaption&gt; - Layout & Container</h3>
+        <p>Das HTML-Kommando &lt;figcation&gt; dient dazu, einer Grafik oder einem Medieninhalt eine Bildunterschrift (Caption) zu geben. Es wird innerhalb des &lt;figure&gt;-Elements verwendet.
+            Zweck von &lt;figcation&gt;:
+            Bietet eine Beschreibung oder Erklärung zu einem Bild, Diagramm, Video etc.
+            Macht Inhalte semantisch korrekt und barrierefreier.
+            Die Caption wird typischerweise sichtbar unterhalb des Bildes angezeigt.</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" alt="Weltkarte" style="width: 10%;"&gt;
+    &lt;figcaption>Abbildung 1: Weltkarte&lt;/figcaption&gt;
+&lt;/figure&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" alt="Weltkarte" style="width: 10%;">
+        <figcaption>Abbildung 1: Weltkarte</figcaption>
+      </figure>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;figure&gt; - Layout & Container</h3>
+        <p>Das HTML-Kommando &lt;figure&gt; wird verwendet, um selbstständige, inhaltlich zusammenhängende Medieninhalte wie Bilder, Diagramme, 
+            Illustrationen, Codeblöcke oder Tabellen semantisch korrekt zu gruppieren. Es gehört zu den HTML5-Elementen und verbessert Struktur und Barrierefreiheit.</p>
+
+            <p>📌 Zweck von &lt;figure&gt;:
+            Dient zur Einbettung von Medieninhalten, die zum Text gehören, aber auch ohne ihn verständlich sind.
+            Wird oft zusammen mit &lt;figcation&gt; verwendet, um eine Bildunterschrift oder Beschreibung zu liefern.
+            Kann im Textfluss stehen oder ausgekoppelt dargestellt werden (z.B. als Grafikblock).</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;figure&gt;
+    &lt;img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" alt="Weltkarte" style="width: 10%;"&gt;
+&lt;/figure&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <figure>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/c/cf/Worldmap_LandAndPolitical.jpg" alt="Weltkarte" style="width: 10%;">
+      </figure>
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Text & Inhalt">
+        <h3>&lt;font&gt; (veraltet) - Text & Inhalt</h3>
+        <p>Seit HTML4 und vollständig in HTML5 ist &lt;font&gt; nicht mehr empfohlen und gilt als veraltet, weil:
+            Design und Layout sollen über CSS, nicht über HTML geregelt werden
+            &lt;font&gt; macht den Code schwer wartbar und unsauber.</p>
+<p style="font-weight: bold;">css:</p>
+<pre><code>&lt;p style="font-family: Arial; font-size: 12px; color: white;"&gt;Text in weißer Arial-Schrift&lt;/p&gt;
+</code></pre>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;font face="Arial" size="2" color="white"&gt;Text in weißer Arial-Schrift&lt;/font&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <font face="Arial" size="2" color="white">Text in weißer Arial-Schrift</font>
+
+
+    </div>
+    <!-------------------------------- New Artikel ---------------------------------------->
+    <div class="artikel" data-group="Layout & Container">
+        <h3>&lt;footer&gt; - Layout & Container</h3>
+        <p>Das HTML-Kommando &lt;footer&gt; wird verwendet, um den Fußbereich eines Dokuments oder Abschnitts zu definieren. 
+        Es gehört zu den semantischen HTML5-Elementen und verbessert die Struktur und Lesbarkeit von Webseiten – für Menschen 
+        und Suchmaschinen gleichermaßen.Obwohl &lt;footer> semantisch meist einmal pro Seite für den Seitenfuß verwendet wird, ist 
+        es HTML5-konform, mehrere &lt;footer&gt;-Elemente auf einer Seite zu verwenden – solange sie sich auf unterschiedliche 
+        inhaltliche Bereiche beziehen.</p>
+
+        <p style="font-weight: bold;">Zweck von &lt;footer&gt;:</p>
+        <p>Markiert den unteren Bereich einer Seite, eines Artikels, einer Sektion oder eines anderen Containers.<br>
+        Enthält oft Metainformationen, wie:<br>
+        Copyright-Hinweise<br>
+        Kontaktinformationen<br>
+        Links zu Datenschutz, Impressum etc.<br>
+        Navigationshilfen oder verwandte Dokumente</p>
+        <p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;div class="code-box"&gt;
+&lt;footer&gt;&lt;br&gt;
+&nbsp;&nbsp;© 2025 Meine Webseite&lt;br&gt;
+&lt;/footer&gt;
+&lt;/div&gt;
+</pre></code>
+
+    <p style="font-weight: bold;">Ergebnis:</p>
+    <div class="code-box">
+        &lt;footer&gt;<br>
+        &nbsp;&nbsp;© 2025 Meine Webseite<br>
+        &lt;/footer&gt;
+      </div>
+    </div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;form&gt; - Formulare</h3>
+<p>Das HTML-Kommando &lt;form&gt; wird verwendet, um ein Formular zu erstellen – also einen 
+    Bereich auf einer Webseite, in dem Benutzer Eingaben machen können (z. B. Texteingaben, 
+    Auswahlfelder, Buttons) und diese Daten an einen Server senden können.</p>
+
+
+<table border="1">
+    <caption>Wichtigste Attribute</caption>
+    <tr>
+        <th>Attribut</th>
+        <th>Bedeutung</th>
+    </tr>
+    <tr>
+        <td>action</td>
+        <td>Ziel-URL, an die die Formulardaten gesendet werden</td>
+    </tr>
+    <tr>
+        <td>method</td>
+        <td>HTTP-Methode: GET (sichtbar in URL) oder POST (unsichtbar, für sensible Daten)</td>
+    </tr>
+    <tr>
+        <td>enctype</td>
+        <td>Kodierung der Formulardaten (z. B. multipart/form-data für Datei-Uploads)</td>
+    </tr>
+</table>
+<br>	
+<table border="1">
+    <caption>Typische Eingabeelemente im Formular</caption>
+    <tr>
+        <td>&lt;input&gt;</td>
+        <td>(Textfeld, Passwort, Checkbox, Radio etc.)</td>
+    </tr>
+    <tr>
+        <td>&lt;textarea&gt;</td>
+        <td>(mehrzeilige Texteingabe)</td>
+    </tr>
+    <tr>
+        <td>&lt;select&gt; + &lt;option&gt;</td>
+        <td> (Dropdown)</td>
+    </tr>
+    <tr>
+        <td>&lt;button&gt;</td>
+        <td> (zum Absenden oder Steuern)</td>
+    </tr>
+</table>	
+
+<p style="font-weight: bold;">Zweck von &lt;form&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;form action="/login" method="post"&gt;
+  &lt;label&gt;Benutzername: &lt;input type="text" name="user">&lt;/label&gt;
+  &lt;label&gt;Passwort: &lt;input type="password" name="pass&lt;/label&gt;
+  &lt;button type="submit"&gt;Login&lt;/button&gt;
+&lt;/form&gt;</code></pre>
+
+<p style="font-weight: bold;">Ergebnis:</p>
+<form action="/login" method="post">
+  <label>Benutzername: <input type="text" name="user"></label>
+  <label>Passwort: <input type="password" name="pass"></label>
+  <button type="submit">Login</button>
+</form>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="veralteter">
+<h3>&lt;frame&gt; - Veraltet</h3>
+<p>Das HTML-Kommando &lt;frame&gt; stammt aus älteren Versionen von HTML (v.a. HTML 4) und wurde verwendet, um eine Webseite in mehrere 
+    getrennte Bereiche (Frames) aufzuteilen – jeder Frame konnte eine andere HTML-Datei laden.<br>
+Achtung:&lt;frame&gt; und &lt;frameset&gt; sind veraltet und werden in HTML5 nicht mehr unterstützt. Moderne Webseiten verwenden stattdessen 
+    CSS + &lt;iframe&gt; oder responsive Layouts mit Flexbox/Grid.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;frameset cols="30%,70%"&gt;
+  &lt;frame src="frame01.html"&gt;
+  &lt;frame src="frame02.html"&gt;
+&lt;/frameset&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<frameset cols="30%,70%">
+  <frame src="frame01.html">
+  <frame src="frame02.html">
+</frameset>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;frameset&gt; - Veraltet</h3>
+<p>Das HTML-Kommando &lt;frameset&lt; wurde in älteren Versionen von HTML (HTML 4) verwendet, um eine Webseite in mehrere 
+    unterteilte Bereiche (Frames) aufzuteilen. Es ersetzt dabei das normale &lt;body&lt;-Tag und legt fest, wie viele Frames 
+    eine Seite enthält und wie sie angeordnet sind.<br>
+Wichtig: &lt;frameset&lt; ist veraltet und wird in HTML5 nicht mehr unterstützt. Stattdessen verwendet man moderne Layout-Techniken 
+    wie CSS Flexbox, Grid oder &lt;iframe&lt;.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;frameset cols="30%,70%"&gt;
+  &lt;frame src="frame01.html"&gt;
+  &lt;frame src="frame02.html"&gt;
+&lt;/frameset&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<frameset cols="30%,70%">
+  <frame src="frame01.html">
+  <frame src="frame02.html">
+</frameset>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;h1&gt;–&lt;h6&gt; - Text & Inhalt</h3>
+<p>Die HTML-Kommandos &lt;h1&gt; bis &lt;h6&gt; definieren Überschriften auf einer Webseite – von der wichtigsten (größten) bis zur unwichtigsten (kleinsten):</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;h1&gt;Willkommen&lt;/h1&gt;
+&lt;h2&gt;Über uns&lt;/h2&gt;
+&lt;h3&gt;Unser Team&lt;/h3&gt;
+&lt;h4&gt;Positionen&lt;/h4&gt;
+&lt;h5&gt;Details&lt;/h5&gt;
+&lt;h6&gt;Kleingedrucktes&lt;/h6&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<h1>Willkommen</h1>
+<h2>Über uns</h2>
+<h3>Unser Team</h3>
+<h4>Positionen</h4>
+<h5>Details</h5>
+<h6>Kleingedrucktes</h6>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Grundstruktur">
+<h3>&lt;head&gt; -Grundstruktur</h3>
+<p>Das HTML-Kommando &lt;head&gt; wird verwendet, um Metainformationen über eine Webseite zu definieren – also Informationen, 
+    die nicht direkt im sichtbaren Inhalt der Seite erscheinen, sondern für den Browser, Suchmaschinen oder andere Dienste wichtig sind. 
+    Der &lt;head&gt;-Bereich beeinflusst das Verhalten und Aussehen der Seite, aber enthält keine sichtbaren Inhalte, die direkt auf der Seite 
+        erscheinen – dafür ist der &lt;body&gt; zuständig.</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;head&gt;
+  &lt;meta charset="UTF-8&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;meta name="description" content="Dies ist eine Beispiel-Webseite mit HTML&gt;
+  &lt;meta name="author" content="Max Mustermann&gt;
+  
+  &lt;title>Beispiel-Webseite&lt;/title&gt;
+  
+  &lt;link rel="stylesheet" href="styles.css"&gt;
+  &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+  
+  &lt;script src="script.js" defer>&lt;/script&gt;
+&lt;/head&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Das Ergebnis ist nicht direkt auf der Seite sichtbar.</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Layout & Container">
+<h3>&lt;header&gt; - Layout & Container</h3>
+<p>Das HTML-Kommando &lt;header&gt; wird verwendet, um einen Kopfbereich (Header) eines Dokuments oder eines Abschnitts 
+    zu definieren. Es enthält meist Einführungselemente oder Navigationshilfen, wie:
+<ul>
+<li>Seitentitel</li>
+<li>Logos</li>
+<li>Navigation</li>
+<li>Slogans oder Einführungen</li>
+</ul>
+</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>  
+    &lt;header&gt;
+    &lt;h1&gt;Meine Webseite&lt;/h1&gt;
+    &lt;nav&gt;
+      &lt;ul&gt;
+        &lt;li&lt;a href="#home"&gt;Startseite&lt;/a&lt;/li&gt;
+        &lt;li>&lt;a href="#about"&gt;Über uns&lt;/a&lt;/li&gt;
+        &lt;li&lt;a href="#contact&gt;Kontakt&lt;/a&lt;/li&gt;
+      &lt;/ul&gt;
+    &lt;/nav&gt;
+  &lt;/header&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+  <header>
+    <h1>Meine Webseite</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Startseite</a></li>
+        <li><a href="#about">Über uns</a></li>
+        <li><a href="#contact">Kontakt</a></li>
+      </ul>
+    </nav>
+  </header>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Layout & Container">
+<h3>&lt;hgroup&gt; - Layout & Container</h3>
+<p>Das HTML-Kommando &lt;hgroup&gt; wird verwendet, um eine Gruppe von Überschriften logisch zusammenzufassen – meist eine Hauptüberschrift mit 
+    einer oder mehreren Unterüberschriften. Nur Überschriften (&lt;h1&gt; bis &lt;h6&gt;) dürfen direkt innerhalb von &lt;hgroup&gt; stehen. Nicht alle Browser 
+    oder Screenreader unterstützen &lt;hgroup&gt; vollständig, daher wird es selten in der Praxis verwendet. In HTML5 ist es gültig, aber manche 
+    Entwickler verzichten darauf und verwenden stattdessen &lt;div&gt; oder einfach die Überschriften ohne Gruppierung.</p>
+<p style="font-weight: bold;">Zweck von &lt;hgroup&gt;:</p>
+<p>Strukturiert verwandte Überschriften, z. B. einen Titel mit einem Untertitel
+Dient der besseren semantischen Auszeichnung und Barrierefreiheit (Screenreader etc.)</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;hgroup&gt;
+  &lt;h1&gt;Willkommen auf meiner Webseite&lt;/h1&gt;
+  &lt;h2&gt;Ihr Portal für Technik und Wissen&lt;/h2&gt;
+&lt;/hgroup&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<hgroup>
+  <h1>Willkommen auf meiner Webseite</h1>
+  <h2>Ihr Portal für Technik und Wissen</h2>
+</hgroup>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;hr&gt; - Text & Inhalt</h3>
+<p>Das HTML-Kommando &lt;hr> steht für horizontal rule und wird verwendet, um eine horizontale Linie darzustellen – typischerweise 
+    als optische Trennung zwischen Abschnitten oder Themen auf einer Webseite.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;p&gt;Einleitungstext&lt;/p&gt;
+&lt;hr&gt;
+&lt;p&gt;Neuer Abschnitt beginnt hier&lt;/p&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Einleitungstext</p>
+<hr>
+<p>Neuer Abschnitt beginnt hier</p>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Grundstruktur">
+<h3>&lt;html&gt; - Grundstruktur</h3>
+<p>Das HTML-Kommando <html> steht für das Wurzelelement eines HTML-Dokuments – also den Startpunkt für jede Webseite. Es umschließt den 
+    gesamten HTML-Code und teilt dem Browser mit: „Ab hier beginnt ein HTML-Dokument.“</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;!-- Metainformationen &gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Sichtbarer Inhalt &gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Das Ergebnis ist nicht direkt auf der Seite sichtbar.</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;i&gt; - Text & Inhalt</h3>
+<p>Das HTML-Kommando &lt;i&gt; steht für "italic" (kursiv) und wird verwendet, um Text kursiv darzustellen – typischerweise für Inhalte, 
+    die besonders hervorgehoben, aber nicht wichtig im Sinne der Betonung sind. Früher (in HTML4) wurde &lt;i&gt; rein für die Darstellung verwendet (also einfach Schriftschrägung).
+
+In HTML5 hat das Tag zusätzlich eine semantische Bedeutung:
+Es wird für Text verwendet, der aus stilistischen oder typografischen Gründen hervorgehoben wird, z. B.:</p>
+<ul>
+<li>Fachbegriffe</li>
+<li>Fremdwörter</li>
+<li>Gedanken</li>
+<li>Namen von Kunstwerken, Buchtiteln etc.</li>
+</ul>
+
+<p>Wenn du etwas inhaltlich betonen willst (nicht nur stilistisch), solltest du besser &lt;em&gt; verwenden.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;p&gt;Das Wort &lt;i&gt;kursiv&lt;/i&gt; ist in Schrägschrift dargestellt.&lt;/p&gt;
+&lt;p&gt;Das ist &lt;em&gt;wirklich&lt;/em&gt; wichtig&lt;/p&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Das Wort <i>kursiv</i> ist in Schrägschrift dargestellt.</p>
+<p>Das ist <em>wirklich</em> wichtig!</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;iframe&gt; - Multimedia</h3>
+<p>Das HTML-Kommando &lt;iframe&gt; steht für "inline frame" und wird verwendet, um eine andere Webseite oder ein anderes HTML-Dokument 
+    innerhalb der aktuellen Seite einzubetten – wie ein kleines „Fenster“ in eine andere Seite. Viele moderne Websites erlauben keine Einbettung 
+    per iframe aus Sicherheitsgründen (X-Frame-Options-Header). Aus Datenschutzgründen sollten eingebettete Inhalte (z. B. von Drittanbietern) 
+    transparent deklariert werden.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  frameborder="0" 
+  allowfullscreen&gt;
+&lt;/iframe&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<iframe width="560" height="315" 
+  src="https://www.youtube.com/embed/dQw4w9WgXcQ" 
+  frameborder="2" 
+  allowfullscreen>
+</iframe>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;img&gt; - Multimedia</h3>
+<p>Das HTML-Kommando &lt;img&gt; wird verwendet, um Bilder in eine Webseite einzufügen. Es ist ein sogenanntes leeres Element – das heißt, 
+    es hat keinen schließenden Tag (&lt;/img&gt; gibt es nicht).</p>
+
+<p>Weitere nützliche Attribute:</p>
+<ul>
+<li>title: Zeigt einen Tooltip, wenn man mit der Maus über das Bild fährt.</li>
+<li>loading="lazy": Verzögert das Laden von Bildern, bis sie sichtbar sind (optimiert Ladezeit).</li>
+</ul>
+
+<p>Verwende immer das alt-Attribut! Es hilft: Sehbehinderten Menschen (Screenreader lesen es vor); Suchmaschinen (zur Bildindexierung); Beim Anzeigen eines Platzhalters, 
+    falls das Bild nicht geladen werden kann</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;img src="Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300"&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<img src="Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300">
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;input&gt; - Formulare</h3>
+<p>Das HTML-Tag &lt;input> wird verwendet, um interaktive Formularelemente zu erstellen, mit denen Benutzer Daten eingeben oder auswählen können. 
+    Es ist ein selbstschließendes Tag (keine separate &lt;/input>-Schreibweise nötig) und sehr vielseitig.</p>
+<ul>
+<li>Zum Erfassen von Benutzereingaben wie z. B.:</li>
+<li>Text (<input type="text">)</li>
+<li>Passwörter (<input type="password">)</li>
+<li>Checkboxen (<input type="checkbox">)</li>
+<li>Radio-Buttons (<input type="radio">)</li>
+<li>Datum und Uhrzeit (<input type="date">, type="time" usw.)</li>
+<li>Dateiuploads (<input type="file">)</li>
+<li>Absenden von Formularen (<input type="submit">)</li>
+</ul>
+<p style="font-weight: bold;">Zweck von &lt;input&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;form>
+  Name: &lt;input type="text" name="username"&gt;&lt;br&gt;
+  Passwort: &lt;input type="password" name="password"&gt;&lt;br&gt;
+  &lt;input type="submit" value="Einloggen"&gt;
+&lt;/form&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<form>
+  Name: <input type="text" name="username"><br>
+  Passwort: <input type="password" name="password"><br>
+  <input type="submit" value="Einloggen">
+</form>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;ins&gt; - Text & Inhalt</h3>
+<p>Das HTML-Tag &lt;ins> steht für "inserted" (engl. für „eingefügt“) und wird verwendet, um neu hinzugefügten Text im Dokument hervorzuheben – häufig 
+    in Verbindung mit Textänderungen (z. B. bei Dokumentvergleichen, Versionierung oder redaktionellen Korrekturen).</p>
+<p style="font-weight: bold;">Zweck von &lt;ins&gt;:<p>
+<p>Markiert neuen oder eingefügten Text. In vielen Browsern wird der Text unterstrichen dargestellt.<br>
+Optional kann das datetime-Attribut verwendet werden, um anzugeben, wann die Änderung erfolgt ist.<br>
+</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;p&gt;Der Preis beträgt &lt;del&gt;20€&lt;/del&gt; &lt;ins&gt;15€&lt;/ins&gt;.&lt;/p&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<p>Der Preis beträgt <del>20€</del> <ins>15€</ins>.</p>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;isindex&gt; (Veraltet) - Formulare</h3>
+<p>Das HTML-Tag &lt;isindex&gt; ist ein veraltetes HTML-Element, das ursprünglich in frühen Versionen von HTML (HTML 2.0) verwendet wurde, um ein 
+    einfaches Texteingabefeld für Suchabfragen bereitzustellen. In HTML5 ist es komplett entfernt worden. Moderne Browser ignorieren &lt;isindex&gt; vollständig.</p>
+<p style="font-weight: bold;">Zweck von &lt;isindex&gt;:</p>
+<p>Das Tag wurde verwendet, um eine einfache Eingabezeile für Suchanfragen bereitzustellen, die an ein CGI-Skript übergeben wurden. 
+    Es konnte nur einmal pro Seite verwendet werden und war hauptsächlich für dokumentenweite Suchfunktionen gedacht.</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;isindex prompt="Suchbegriff eingeben:"&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<isindex prompt="Suchbegriff eingeben:">
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;kbd&gt; - Text & Inhalt</h3>
+<p>Das Kommando &lt;kbd&gt; ist ein HTML-Tag und steht für "keyboard input" (Tastatureingabe). Es wird verwendet, um Text darzustellen, der von einem Benutzer 
+    typischerweise über die Tastatur eingegeben wird – z. B. Tastenkombinationen oder Befehle.</p>
+<p style="font-weight: bold;">Zweck von &lt;kbd&gt;:</p>
+<ul>
+    <li>Zur semantisch korrekten Darstellung von Tasteneingaben.</li>
+    <li>Nützlich in technischen Dokumentationen, Tutorials oder Benutzeranleitungen.</li>
+    <li>Viele Browser stellen Text im &lt;kbd&gt;-Tag standardmäßig in einer monospace-Schriftart dar, um ihn visuell von normalem Text abzuheben.</li>
+</ul>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>Drücken Sie &lt;kbd&gt;Strg&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt;, um zu kopieren.
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+Drücken Sie <kbd>Strg</kbd> + <kbd>C</kbd>, um zu kopieren.
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;keygen&gt; - Veraltet</h3>
+<p>Das HTML-Tag &lt;keygen> war ein veraltetes Element, das ursprünglich verwendet wurde, um ein Schlüsselpaar (Public/Private Key Pair) 
+    im Browser zu generieren und den öffentlichen Schlüssel an den Server zu senden, z. B. für die clientseitige Zertifikatsauthentifizierung.</p>
+Dabei wurde:
+
+<ul>
+    <li>Der öffentliche Schlüssel an den Server gesendet (im key-Feld).</li>
+    <li>Der private Schlüssel sicher im Browser gespeichert.</li>
+    <li>Diese Technik sollte den Aufbau einer Client-Zertifikatsinfrastruktur erleichtern.</li>
+</ul>
+
+<p>Das &lt;keygen&gt;-Element ist in HTML5 veraltet (deprecated) und wird nicht mehr von allen modernen Browsern unterstützt (z. B. Chrome, Firefox und Edge haben es entfernt).
+Sicherheitsbedenken und mangelnde Kontrolle über das Schlüsselmanagement im Browser führten zur Abkehr.</p>
+
+<p style="font-weight: bold;">Alternative:</p>
+<p>Für sichere Authentifizierung und Schlüsselaustausch verwendet man heute:</p>
+
+<ul>
+    <li>Web Cryptography API (clientseitige Krypto-Funktionen in JavaScript)</li>
+    <li>FIDO2/WebAuthn für passwortlose Authentifizierung</li>
+    <li>TLS-Clientzertifikate (außerhalb von HTML gesteuert)</li>
+</ul>
+
+<p style="font-weight: bold;">Zweck von &lt;keygen&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;form action="submit.php" method="post"&gt;
+  Name: &lt;input name="name"&gt;
+  Schlüssel: &lt;keygen name="key"&gt;
+  &lt;input type="submit"&gt;
+&lt;/form&gt;</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<form action="submit.php" method="post">
+  Name: <input name="name">
+  Schlüssel: <keygen name="key">
+  <input type="submit">
+</form>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;label&gt; - Formulare</h3>
+<p>Das HTML-Element &lt;label&gt; wird verwendet, um Formularfelder (wie &lt;input&gt;, &lt;textarea&gt;, &lt;select&gt;, etc.) mit einer 
+    beschreibenden Bezeichnung zu versehen. Es verbessert sowohl die Benutzerfreundlichkeit als auch die Barrierefreiheit eines Formulars.</p>
+<p style="font-weight: bold;">Zweck von &lt;label&gt;:</p>
+<p>Verknüpft Text mit einem Formularfeld:</p>
+<ul>
+    <li>Wenn der Benutzer auf das Label klickt, wird automatisch das zugehörige Eingabefeld fokussiert oder aktiviert (z. B. ein Kontrollkästchen angehakt).</li>
+    <li>Das hilft besonders bei kleinen Eingabeelementen wie Checkboxen oder Radio-Buttons.</li>
+</ul>
+<p>Erhöht die Zugänglichkeit:</p>
+<ul>
+    <li>Screenreader können anhand des &lt;label&gt; den Zweck eines Eingabefelds erkennen und korrekt vorlesen.</li>
+</ul>
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;label for="subscribe">Newsletter abonnieren&lt;/label&gt;
+&lt;input type="checkbox" id="subscribe" name="subscribe&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<label for="subscribe">Newsletter abonnieren</label>
+<input type="checkbox" id="subscribe" name="subscribe">
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;legend&gt; - Formulare</h3>
+<p>Das HTML-Element &lt;legend&gt; wird verwendet, um einer Gruppenbox in einem Formular eine Überschrift oder Beschreibung zu geben. 
+    Es gehört immer zu einem &lt;fieldset&gt;-Element und beschreibt den Zweck oder Kontext der darin enthaltenen Formularfelder.</p>
+<p style="font-weight: bold;">Zweck von &lt;legend&gt;:</p>
+
+Der &lt;legend&gt;-Text wird standardmäßig optisch hervorgehoben und oberhalb eines Rahmens angezeigt, der vom &lt;fieldset&gt; erzeugt wird.
+Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.
+
+<ul>
+    <li>Strukturiert Formulare sinnvoll in thematische Gruppen.</li>
+    <li>Verbessert Barrierefreiheit, da Screenreader die Gruppenüberschrift vorlesen.</li>
+    <li>Erhöht Benutzerfreundlichkeit, da verwandte Felder zusammengefasst und erklärt werden.</li>
+</ul>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>&lt;fieldset&gt;
+  &lt;legend&gt;Persönliche Informationen&lt;/legend&gt;
+  
+  &lt;label for="name"&gt;Name:&lt;/label&gt;
+  &lt;input type="text" id="name" name="name&gt;
+
+  &lt;label for="email&gt;E-Mail:&lt;/label&gt;
+  &lt;input type="email" id="email" name="email"&gt;
+&lt;/fieldset&gt;
+</code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+<fieldset>
+  <legend>Persönliche Informationen</legend>
+  
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name">
+
+  <label for="email">E-Mail:</label>
+  <input type="email" id="email" name="email">
+</fieldset>
+
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="dbd">
+<h3>&lt;li&gt; - tbd</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;li&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Grundstruktur">
+<h3>&lt;link&gt; - Grundstruktur</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;link&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Layout & Container">
+<h3>&lt;main&gt; - Layout & Container</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;main&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;map&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;map&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;mark&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;mark&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;marquee&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;marquee&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;menu&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;menu&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;menuitem&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;menuitem&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Meta & SEO">
+<h3>&lt;meta&gt; - Meta & SEO</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;meta&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;meter&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;meter&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Verlinkungen">
+<h3>&lt;nav&gt; - Verlinkungen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;nav&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;noframes&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;noframes&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Skripte & Logik">
+<h3>&lt;noscript&gt; - Skripte & Logik</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;noscript&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;object&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;object&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;ol&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;ol&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;optgroup&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;optgroup&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;option&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;option&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;output&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;output&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;p&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;p&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;param&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;param&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;picture&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;picture&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;pre&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;pre&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;progress&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;progress&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;q&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;q&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;rb&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;rb&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;rp&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;rp&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;rt&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;rt&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;rtc&gt; (veraltet) - ???</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;rtc&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;ruby&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;ruby&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;s&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;s&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;samp&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;samp&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Skripte & Logik">
+<h3>&lt;script&gt; - Skripte & Logik</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;script&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Layout & Container">
+<h3>&lt;section&gt; - Layout & Container</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;section&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;select&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;select&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;small&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;small&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;source&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;source&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;span&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;span&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;strike - Veraltet&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;strike&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;strong&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;strong&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Grundstruktur">
+<h3>&lt;style&gt; - Grundstruktur</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;style&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;sub&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;sub&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Interaktive Elemente">
+<h3>&lt;summary&gt; - Interaktive Elemente</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;summary&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;sup&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;sup&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;svg&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;svg&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;table&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;table&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;tbody&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;tbody&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;td&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;td&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Skripte & Logik">
+<h3>&lt;template&gt; - Skripte & Logik</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;template&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;textarea&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;textarea&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Formulare">
+<h3>&lt;tfoot&gt; - Formulare</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;tfoot&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;th&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;th&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;thead&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;thead&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;time&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;time&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Grundstruktur">
+<h3>&lt;title&gt; - Grundstruktur</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;title&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;tr&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;tr&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;track&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;track&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Veraltet">
+<h3>&lt;tt&gt; - Veraltet</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;tt&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;u&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;u&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;ul&gt; - Listen & Tabellen</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;ul&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;var&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;var&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;video&gt; - Multimedia</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;video&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+<!-------------------------------- New Artikel ---------------------------------------->
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;wbr&gt; - Text & Inhalt</h3>
+<p></p>
+<p style="font-weight: bold;">Zweck von &lt;wbr&gt;:</p>
+<p style="font-weight: bold;">Code:</p>
+<pre><code></code></pre>
+<p style="font-weight: bold;">Ergebnis:</p>
+</div>
+
+<!-------------------------------- New Artikel ---------------------------------------->
+
+    <!-- Filter-Logik -->
+    <script>
+        const articles = document.querySelectorAll('.artikel');
+        const groups = new Set();
+        articles.forEach(article => {
+            groups.add(article.getAttribute('data-group'));
+        });
+
+        const buttonContainer = document.getElementById('filter-buttons');
+
+        const createButton = (groupName, label) => {
+            const btn = document.createElement('button');
+            btn.textContent = label;
+            btn.setAttribute('data-group', groupName);
+            buttonContainer.appendChild(btn);
+        };
+
+        createButton('all', 'Alle');
+        groups.forEach(group => {
+            createButton(group, group.charAt(0).toUpperCase() + group.slice(1));
+        });
+
+        buttonContainer.querySelectorAll('button').forEach(button => {
+            button.addEventListener('click', () => {
+                const group = button.getAttribute('data-group');
+                articles.forEach(article => {
+                    const articleGroup = article.getAttribute('data-group');
+                    article.style.display = (group === 'all' || articleGroup === group) ? 'block' : 'none';
+                });
+            });
+        });
+    </script>
+
+</body>
+
+</html>
