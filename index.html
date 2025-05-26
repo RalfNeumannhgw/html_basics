@@ -1136,7 +1136,7 @@ body {
 </form>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="veralteter">
+<div class="artikel" data-group="Veraltet">
 <h3>&lt;frame&gt; - Veraltet</h3>
 <p>Das HTML-Kommando &lt;frame&gt; stammt aus älteren Versionen von HTML (v.a. HTML 4) und wurde verwendet, um eine Webseite in mehrere 
     getrennte Bereiche (Frames) aufzuteilen – jeder Frame konnte eine andere HTML-Datei laden.<br>
@@ -1535,8 +1535,8 @@ Sicherheitsbedenken und mangelnde Kontrolle über das Schlüsselmanagement im Br
     Es gehört immer zu einem &lt;fieldset&gt;-Element und beschreibt den Zweck oder Kontext der darin enthaltenen Formularfelder.</p>
 <p style="font-weight: bold;">Zweck von &lt;legend&gt;:</p>
 
-Der &lt;legend&gt;-Text wird standardmäßig optisch hervorgehoben und oberhalb eines Rahmens angezeigt, der vom &lt;fieldset&gt; erzeugt wird.
-Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.
+<p>Der &lt;legend&gt;-Text wird standardmäßig optisch hervorgehoben und oberhalb eines Rahmens angezeigt, der vom &lt;fieldset&gt; erzeugt wird.
+Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.</p>
 
 <ul>
     <li>Strukturiert Formulare sinnvoll in thematische Gruppen.</li>
@@ -1568,193 +1568,666 @@ Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.
 
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="dbd">
-<h3>&lt;li&gt; - tbd</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;li&gt;:</p>
+<div class="artikel" data-group=" Listen & Tabellen">
+<h3>&lt;li&gt; -  Listen & Tabellen</h3>
+<p>Das HTML-Element &lt;li&gt; steht für "list item" (Listenelement) und wird verwendet, um ein einzelnes Element in einer Liste darzustellen.
+    &lt;li&gt; kommt immer innerhalb einer der folgenden Listentypen vor: &lt;ul&gt;,&lt;ol&gt;,&lt;menu&gt;. Es strukturiert Inhalte klar 
+    und leserlich und ist ein grundlegendes Element für Navigation, Aufzählungen und Inhalte jeder Art.
+</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;ul&gt;
+  &lt;li&gt;Früchte
+    &lt;ul&gt;
+      &lt;li&gt;Apfel&lt;/li&gt;
+      &lt;li&gt;Birne&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<ul>
+  <li>Früchte
+    <ul>
+      <li>Apfel</li>
+      <li>Birne</li>
+    </ul>
+  </li>
+</ul>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Grundstruktur">
 <h3>&lt;link&gt; - Grundstruktur</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;link&gt;:</p>
+<p>Das HTML-Element &lt;link&gt; wird verwendet, um eine Ressource mit dem aktuellen HTML-Dokument zu verknüpfen – meist für externe Dateien wie 
+    Stylesheets (CSS), Icons oder Feeds.</p>
+<p>Attribute des &lt;link&gt;-Tages</p>
+<ul>
+    <li>rel	- Art der Beziehung (z. B. stylesheet, icon, preload, alternate)</li>
+    <li>href	- Pfad zur verknüpften Datei</li>
+    <li>type	- (Optional) MIME-Typ der Datei</li>
+    <li>media	- (Optional) Für welches Medium oder welche Bedingungen die Datei gilt (z. B. screen, print)</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;head&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<p>Es ist Teil der Grundstruktur und nicht direkt sichtbar.</p>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Layout & Container">
 <h3>&lt;main&gt; - Layout & Container</h3>
-<p></p>
+<p>Das HTML-Element &lt;main&gt; wird verwendet, um den Hauptinhalt einer Webseite zu kennzeichnen – also den inhaltlichen Kern, der einzigartig 
+    für diese Seite ist und nicht Teil von Navigation, Header oder Footer ist.</p>
 <p style="font-weight: bold;">Zweck von &lt;main&gt;:</p>
+<ul>
+    <li>Semantische Struktur: Hilft Browsern, Screenreadern und Suchmaschinen zu erkennen, was der zentrale Inhalt der Seite ist.</li>
+    <li>Barrierefreiheit: Screenreader können direkt zum Hauptinhalt springen.</li>
+    <li>SEO: Suchmaschinen können relevanten Content besser priorisieren.</li>
+</ul>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;main&gt;
+    &lt;h2&gt;Willkommen!&lt;/h2&gt;
+    &lt;p&gt;Dies ist der Hauptinhalt dieser Seite.&lt;/p&gt;
+&lt;/main&gt;</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+  <main>
+    <h2>Willkommen!</h2>
+    <p>Dies ist der Hauptinhalt dieser Seite.</p>
+  </main>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Multimedia">
 <h3>&lt;map&gt; - Multimedia</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;map&gt;:</p>
+<p>Das Kommando <map> ist ein HTML-Tag, das in Verbindung mit dem <area>-Tag verwendet wird, um sogenannte Image Maps zu erstellen. 
+    Eine Image Map ist ein Bild mit klickbaren Bereichen, die wie Links funktionieren.</p>
+
+<p style="font-weight: bold;">Erklärung:</p>
+<ul>
+    <li>&lt;img usemap="#karte"&gt;: Das Bild wird mit einer Image Map namens "karte" verknüpft.</li>
+    <li>&lt;map name="karte"&gt;: Hier beginnt die Definition der klickbaren Bereiche.</li>
+    <li>&lt;area shape="..." coords="..." href="..."&gt;: Definiert einen Bereich (z. B. Rechteck oder Kreis) mit Koordinaten und Link.</li>
+</ul>
+
+<p style="font-weight: bold;">Unterstützte shape-Typen im <area>-Tag:</p>
+<ul>
+    <li>rect (Rechteck)</li>
+    <li>circle (Kreis)</li>
+    <li>poly (Polygon)</li>
+    <li>default (gesamtes Bild)</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;div class="bild-container"&gt;
+  &lt;img src="Burger.png" alt="Burger" width="300" height="231"&gt;
+  &lt;svg class="svg-overlay" width="300" height="231"&gt;
+    &lt;rect x="40" y="130" width="80" height="30" fill="rgba(0, 0, 255, 0.3)" stroke="blue" stroke-width="2" /&gt;
+  &lt;/svg&gt;
+&lt;/div&gt;
+
+&lt;img src="Burger.png" usemap="#karte" alt="Burger" width="300" height="231"&gt;
+&lt;map name="karte"&gt;
+  &lt;area shape="rect" coords="40,130,120,160" href="Tomate.html" alt="Tomate&gt;
+&lt;/map&gt;
+</code></pre>
+
+
 <p style="font-weight: bold;">Ergebnis:</p>
+
+<div class="bild-container">
+  <img src="Burger.png" alt="Burger" width="300" height="231">
+  <svg class="svg-overlay" width="300" height="231">
+    <rect x="40" y="130" width="80" height="30" fill="rgba(0, 0, 255, 0.3)" stroke="blue" stroke-width="2" />
+  </svg>
 </div>
+
+<img src="Burger.png" usemap="#karte" alt="Burger" width="300" height="231">
+<map name="karte">
+  <area shape="rect" coords="40,130,120,160" href="Tomate.html" alt="Tomate">
+</map>
+</div>
+
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Text & Inhalt">
 <h3>&lt;mark&gt; - Text & Inhalt</h3>
-<p></p>
+<p>Das HTML-Tag &lt;mark&gt; wird verwendet, um Text hervorzuheben, der besonders wichtig oder relevant ist – zum Beispiel als Treffer in einer Suchergebnisliste.
+    Wenn du es nur visuell hervorheben willst, ohne die semantische Bedeutung, ist &lt;span style="background-color: yellow"&gt; eventuell geeigneter. Standardmäßig 
+    wird mit der Farbe "gelb" markiert. Dieses kann aber mit css geändert werden.
+</p>
 <p style="font-weight: bold;">Zweck von &lt;mark&gt;:</p>
+<ul>
+    <li>Hervorhebung von Suchbegriffen</li>
+    <li>Wichtige Textstellen betonen</li>
+    <li>Kontextuell relevante Informationen sichtbar machen</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;p&gt;Die &lt;mark&gt;Tomate&lt;/mark&gt; ist eine Frucht, die häufig als Gemüse verwendet wird.&lt;/p&gt;
+
+Beispiel für CSS:
+&lt;style&gt;
+mark {
+  background-color: lightgreen;
+  color: black;
+}
+&lt;/style&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<p>Die <mark>Tomate</mark> ist eine Frucht, die häufig als Gemüse verwendet wird.</p>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="Veraltet">
-<h3>&lt;marquee&gt; - Veraltet</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;marquee&gt;:</p>
+<div class="artikel" data-group="Text & Inhalt">
+<h3>&lt;marquee&gt; (veraltet) - Text & Inhalt</h3>
+<p>Das HTML-Kommando &lt;marquee&gt; wird verwendet, um Text oder andere Inhalte automatisch über die Webseite hinweg scrollen zu lassen – entweder 
+    horizontal oder vertikal. Es ist veraltet und wird in modernen HTML-Standards (HTML5) nicht mehr unterstützt.</p>
+    <p>Die Verwendung wird nicht empfohlen, da es:</p>
+
+<ul>
+    <li>Barrierefreiheit beeinträchtigt</li>
+    <li>nicht konsistent in allen Browsern funktioniert</li>
+    <li>gegen modernes Webdesign (Trennung von Inhalt und Verhalten) verstößt</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;marquee direction="up" scrollamount="3"&gt;Nach oben scrollender Text&lt;/marquee&gt;
+
+Alternative in CSS:
+
+&lt;div class="marquee"&gt;Dies ist ein moderner scrollender Text&lt;/div&gt;
+
+&lt;style&gt;
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  box-sizing: border-box;
+  animation: scroll-text 10s linear infinite;
+}
+
+@keyframes scroll-text {
+  0%   { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+&lt;/style&gt;
+
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<marquee direction="up" scrollamount="3">Nach oben scrollender Text</marquee>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Listen & Tabellen">
-<h3>&lt;menu&gt; - Listen & Tabellen</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;menu&gt;:</p>
-<p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<h3>&lt;menu&gt; (Veraltet) - Listen & Tabellen</h3>
+<p>Das Kommando &lt;menu> war als semantisches HTML-Element gedacht, um Menüs oder Befehlslisten zu definieren, hat aber 
+    heutzutage kaum noch praktische Relevanz. Verwende besser &lt;ul>, &lt;nav> und moderne JavaScript-Lösungen für interaktive Menüs.
+
+Es konnte mit &gt;menuitem&gt; kombiniert werden, um interaktive Menüeinträge zu definieren.
+Beispiel (HTML5-Kontextmenü – experimentell / veraltet):<p></p>
+
+<pre><code>&gt;menu type="context" id="myMenu"&gt;
+  &gt;menuitem label="Neu" onclick="createNewFile()"&gt;&gt;/menuitem&gt;
+  &gt;menuitem label="Öffnen" onclick="openFile()"&gt;&gt;/menuitem&gt;
+&gt;/menu&gt;
+
+</code></pre>
+
 <p style="font-weight: bold;">Ergebnis:</p>
+
+<menu type="context" id="myMenu">
+  <menuitem label="Neu" onclick="createNewFile()"></menuitem>
+  <menuitem label="Öffnen" onclick="openFile()"></menuitem>
+</menu>
+
+
+<p>Das &lt;menu&gt;-Element wird von modernen Browsern nicht mehr aktiv unterstützt.
+Es wurde aus der HTML-Spezifikation de facto entfernt oder gilt als obsolet/veraltet.
+Stattdessen sollte man &lt;ul&gt; oder &lt;nav&gt; mit &lt;li&gt;-Elementen verwenden.</p>
+
+<p style="font-weight: bold;">Code:</p>
+<pre><code>
+&lt;menu type="context" id="myMenu"&gt;
+  &lt;menuitem label="Kopieren" icon="copy.png" onclick="copyText()"&gt;&lt;/menuitem&gt;
+  &lt;menuitem label="Einfügen" icon="paste.png" onclick="pasteText()"&gt;&lt;/menuitem&gt;
+&lt;/menu&gt;
+&lt;div contextmenu="myMenu"&gt;
+  Rechtsklick hier!
+&lt;/div&gt;
+</code></pre>
+
+<p style="font-weight: bold;">Ergebnis:</p>
+<menu type="context" id="myMenu">
+  <menuitem label="Kopieren" icon="copy.png" onclick="copyText()"></menuitem>
+  <menuitem label="Einfügen" icon="paste.png" onclick="pasteText()"></menuitem>
+</menu>
+<div contextmenu="myMenu">
+  Rechtsklick hier!
+</div>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="Veraltet">
-<h3>&lt;menuitem&gt; - Veraltet</h3>
-<p></p>
+<div class="artikel" data-group="Listen & Tabellen">
+<h3>&lt;menuitem&gt; (Veraltet) - Listen & Tabellen</h3>
+<p>Das Kommando &lt;menuitem&gt; ist ein veraltetes HTML-Element, das ursprünglich dafür gedacht war, Menüeinträge in einem &lt;menu&gt;-Element 
+    darzustellen – z. B. für Kontextmenüs oder Befehlsleisten in Webanwendungen.</p>
 <p style="font-weight: bold;">Zweck von &lt;menuitem&gt;:</p>
+<p>Es sollte interaktive Optionen in einem Menü definieren, vergleichbar mit Einträgen in einem Rechtsklick-Menü. Ein &lt;menuitem&gt; konnte z. B.:</p>
+
+<ul>
+    <li>einen Befehl ausführen (type="command")</li>
+    <li>ein Kontrollkästchen darstellen (type="checkbox")</li>
+    <li>eine Optionsschaltfläche darstellen (type="radio")</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>
+&lt;menu type="context" id="myMenu"&gt;
+  &lt;menuitem label="Kopieren" icon="copy.png" onclick="copyText()"&gt;&lt;/menuitem&gt;
+  &lt;menuitem label="Einfügen" icon="paste.png" onclick="pasteText()"&gt;&lt;/menuitem&gt;
+&lt;/menu&gt;
+&lt;div contextmenu="myMenu"&gt;
+  Rechtsklick hier!
+&lt;/div&gt;
+</code></pre>
+
 <p style="font-weight: bold;">Ergebnis:</p>
+<menu type="context" id="myMenu">
+  <menuitem label="Kopieren" icon="copy.png" onclick="copyText()"></menuitem>
+  <menuitem label="Einfügen" icon="paste.png" onclick="pasteText()"></menuitem>
+</menu>
+<div contextmenu="myMenu">
+  Rechtsklick hier!
+</div>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Meta & SEO">
 <h3>&lt;meta&gt; - Meta & SEO</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;meta&gt;:</p>
+<p>Das HTML-Element &lt;meta&gt; wird verwendet, um Metadaten über ein HTML-Dokument zu definieren. Diese Informationen werden 
+    nicht direkt auf der Seite angezeigt, sondern helfen Browsern, Suchmaschinen und anderen Diensten, das Dokument korrekt zu interpretieren.
+&lt;meta&gt; ist ein vielseitiges Werkzeug zur Steuerung, wie dein HTML-Dokument interpretiert, dargestellt und gefunden wird. Es wird nicht direkt 
+angezeigt, beeinflusst aber das Verhalten der Seite im Hintergrund maßgeblich.</p>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;head>
+  &lt;!-- Zeichencodierung --&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;!-- Kompatibilitätsmodus für Internet Explorer --&gt;
+  &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+  &lt;!-- Viewport-Einstellungen für responsive Design --&gt;
+  &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+  &lt;!-- Seitentitel --&gt;
+  &lt;title&gt;Meine Beispielseite&lt;/title&gt;
+  &lt;!-- Beschreibung für Suchmaschinen (SEO) --&gt;
+  &lt;meta name="description" content="Dies ist eine moderne Beispielseite mit HTML-Meta-Tags."&gt;
+  &lt;!-- Autor der Website --&gt;
+  &lt;meta name="author" content="Max Mustermann"&gt;
+  &lt;!-- Steuerung für Suchmaschinenroboter &gt;
+  &lt;meta name="robots" content="index, follow"&gt;
+  &lt;!-- Open Graph (für Social Media Vorschau, z. B. Facebook) --&gt;
+  &lt;meta property="og:title" content="Meine Beispielseite"&gt;
+  &lt;meta property="og:description" content="Eine tolle HTML-Seite mit sinnvollen Meta-Tags."&gt;
+  &lt;meta property="og:type" content="website"&gt;
+  &lt;meta property="og:url" content="https://example.com"&gt;
+  &lt;meta property="og:image" content="https://example.com/vorschau.jpg"&gt;
+  &lt;!-- Twitter Card (Social Media Vorschau für Twitter/X) --&gt;
+  &lt;meta name="twitter:card" content="summary_large_image"&gt;
+  &lt;meta name="twitter:title" content="Meine Beispielseite"&gt;
+  &lt;meta name="twitter:description" content="Eine tolle HTML-Seite mit sinnvollen Meta-Tags."&gt;
+  &lt;meta name="twitter:image" content="https://example.com/vorschau.jpg"&gt;
+  &lt;!-- Favicon --&gt;
+  &lt;link rel="icon" href="/favicon.ico" type="image/x-icon"&gt;
+&lt;/head>    
+
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<p>Beeinflusst die Seite im Hintergrund und ist nicht direkt sichtbar.</p>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Formulare">
 <h3>&lt;meter&gt; - Formulare</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;meter&gt;:</p>
+<p>Das HTML-Element &lt;meter&gt; wird verwendet, um einen Messwert innerhalb eines bekannten Bereichs 
+    darzustellen – also einen "Messbalken" für quantitative Werte. Es eignet sich für Dinge wie:</p>
+<ul>
+    <li>Akkuladestand</li>
+    <li>Speicherverbrauch</li>
+    <li>Bewertungsskalen</li>
+    <li>Temperaturanzeige</li>
+    <li>Fortschrittsanzeige mit konkretem Wertebereich</li>
+</ul>
+
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;label for="disk"&gt;Speicherverbrauch:&lt;/label&gt;
+&lt;meter id="disk" value="70" min="0" max="100"&gt;70%&lt;/meter&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<label for="disk">Speicherverbrauch:</label>
+<meter id="disk" value="70" min="0" max="100">70%</meter>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Verlinkungen">
 <h3>&lt;nav&gt; - Verlinkungen</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;nav&gt;:</p>
+<p>Das HTML-Element &lt;nav&gt; wird verwendet, um einen Navigationsbereich innerhalb einer Webseite zu kennzeichnen. Es ist ein 
+semantisches Element und hilft Browsern, Screenreadern und Suchmaschinen, den Inhalt besser zu verstehen. Das &lt;nav&gt;-Element 
+ist wichtig für strukturierte, zugängliche Websites. Es macht deinen Code semantisch klarer und hilft Nutzern wie Maschinen zu verstehen: "Hier geht es um Navigation."</p>
+
+<p>Wann solltest du &lt;nav&gt; verwenden?</p>
+<ul>
+    <li>Ja: Für Hauptmenüs, Seitenleisten, Fußzeilenmenüs mit Navigationslinks.</li>
+    <li>Nein: Nicht für zufällige Linklisten innerhalb von Artikeln – dort ist &lt;nav&gt; nicht notwendig.</li>
+</ul>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&lt;a href="/startseite"&gt;Startseite&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/ueber-uns"&gt;Über uns&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="/kontakt"&gt;Kontakt&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;
+
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<nav>
+  <ul>
+    <li><a href="/startseite">Startseite</a></li>
+    <li><a href="/ueber-uns">Über uns</a></li>
+    <li><a href="/kontakt">Kontakt</a></li>
+  </ul>
+</nav>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="Veraltet">
-<h3>&lt;noframes&gt; - Veraltet</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;noframes&gt;:</p>
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;noframes&gt; (Veraltet) - Multimedia</h3>
+<p>Das HTML-Element &lt;noframes&gt; stammt aus der Frühzeit des Webs und ist heute veraltet. Es wurde ursprünglich verwendet, 
+    um alternativen Inhalt für Browser bereitzustellen, die keine Frames unterstützen. Wenn ein Browser keine Frames 
+    darstellen konnte, wurde der Inhalt innerhalb von &lt;noframes&gt; angezeigt.
+    &lt;frameset&gt;, &lt;frame&gt; und &lt;noframes&gt; sind komplett veraltet und werden von modernen Browsern nicht mehr unterstützt.
+Sie gehören nicht zur HTML5-Spezifikation.
+Stattdessen solltest du heute CSS-Layouts oder &lt;iframe&gt; (für eingebettete Inhalte) verwenden.</p>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;frameset cols="25%,75%"&gt;
+  &lt;frame src="frame01.html"&gt;
+  &lt;frame src="frame02.html"&gt;
+  &lt;noframes&gt;
+    &lt;body&gt;
+      &lt;p&gt;Ihr Browser unterstützt keine Frames. &lt;a href="inhalt.html"&gt;Zum Inhalt&lt;/a&gt;&lt;/p&gt;
+    &lt;/body&gt;
+  &lt;/noframes&gt;
+&lt;/frameset&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<p>Testcode nicht ausgeführt, es führt zu Problemen beim Refresh der Seite.</p>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Skripte & Logik">
 <h3>&lt;noscript&gt; - Skripte & Logik</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;noscript&gt;:</p>
+<p>Das HTML-Element &lt;noscript> wird verwendet, um Ersatzinhalte für Nutzer anzuzeigen, deren Browser kein JavaScript unterstützen – oder bei denen 
+    JavaScript deaktiviert ist. Es sollte nur gezielt und sparsam eingesetzt werden Zum Test kann JavaScript Unterstützung im Chrome ausgeschaltet 
+    werden chrome://settings/content/javascript</p>
+<p>Es zeigt HTML-Inhalt nur dann an, wenn:</p>
+<ul>
+    <li>JavaScript deaktiviert ist, oder</li>
+    <li>der Browser kein JavaScript unterstützt</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;noscript&gt;
+  &lt;p&gt;Bitte aktivieren Sie JavaScript, um diese Website vollständig nutzen zu können.&lt;/p&gt;
+&lt;/noscript&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<noscript>
+  <p>Bitte aktivieren Sie JavaScript, um diese Website vollständig nutzen zu können.</p>
+</noscript>
+
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Multimedia">
 <h3>&lt;object&gt; - Multimedia</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;object&gt;:</p>
+<p>Das HTML-Element &lt;object&gt; wird verwendet, um externe Inhalte in eine Webseite einzubetten – wie z. B.:</p>
+<ul>
+    <li>Bilder</li>
+    <li>PDFs</li>
+    <li>Videos</li>
+    <li>Audio</li>
+    <li>Java-Applets (veraltet)</li>
+    <li>Flash (veraltet)</li>
+    <li>andere HTML-Seiten oder Datenquellen</li>
+</ul>
+<p>
+Es ist ein Allzweck-Container für externe Ressourcen.
+Das &lt;object&gt;-Element ist sehr vielseitig, aber heute seltener verwendet als &lt;iframe&gt; oder &lt;embed&gt;. Es ist nützlich, wenn du:
+verschiedene Medientypen einbetten willst; Fallback-Inhalte anbieten möchtest, wenn der Inhalt nicht geladen werden kann
+</p>
+<p>Unterschied zu &lt;embed&gt; und &lt;iframe&gt;</p>
+    <ul>
+        <li>&lt;object&gt;	Allzweck	Für viele Medientypen (mit Fallback-Inhalt)</li>
+        <li>&lt;embed&gt;	Direkt	Schnell, weniger flexibel</li>
+        <li>&lt;iframe&gt;	HTML-Seiten	Für eingebettete Webseiten oder Dokumente</li>
+    </ul>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;object data="bild.png" type="image/png width="300" height="231""&gt;
+  &lt;img src="Burger.png" alt="Alternativbild" width="300" height="231"&gt;
+&lt;/object&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<object data="bild.png" type="image/png" width="300" height="231">
+  <img src="Burger.png" alt="Alternativbild" width="300" height="231">
+</object>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Listen & Tabellen">
 <h3>&lt;ol&gt; - Listen & Tabellen</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;ol&gt;:</p>
+<p>Das HTML-Kommando &lt;ol&gt; steht für "ordered list", also eine nummerierte Liste.</p>
+
+<p>Optionale Attribute bei &lt;ol&gt;:<p/>
+<ul>
+<li>type="A" → A, B, C, …</li>
+<li>type="a" → a, b, c, …</li>
+<li>type="I" → I, II, III, …</li>
+<li>start="3" → Startet bei einer anderen Zahl/Buchstabe</li>
+</ul>
+
+<p style="font-weight: bold;">Zweck von &lt;ol&gt;:Mit &lt;ol&gt; erstellst du eine Liste, bei der die einzelnen Einträge automatisch nummeriert werden (z. B. 1., 2., 3., …).</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;ol type="A" start="3"&gt;
+  &lt;li&gt;Dritter Punkt&lt;/li&gt;
+  &lt;li&gt;Vierter Punkt&lt;/li&gt;
+&lt;/ol&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<ol type="A" start="3">
+  <li>Dritter Punkt</li>
+  <li>Vierter Punkt</li>
+</ol>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Formulare">
 <h3>&lt;optgroup&gt; - Formulare</h3>
-<p></p>
+<p>Das HTML-Kommando &lt;optgroup&gt; wird verwendet, um Optionen in einer Dropdown-Liste (&lt;select&gt;) zu gruppieren. Es dient zur besseren Strukturierung und Übersicht bei vielen Auswahlmöglichkeiten.</p>
 <p style="font-weight: bold;">Zweck von &lt;optgroup&gt;:</p>
+<ul>
+<li>Gruppen innerhalb eines &lt;select&gt;-Elements sichtbar machen</li>
+<li>Erhöht die Benutzerfreundlichkeit bei langen Dropdown-Menüs</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;select&gt;
+  &lt;optgroup label="Obst"&gt;
+    &lt;option&gt;Apfel&lt;/option&gt;
+    &lt;option&gt;Banane&lt;/option&gt;
+  &lt;/optgroup&gt;
+  &lt;optgroup label="Gemüse"&gt;
+    &lt;option>Karotte&lt;/option&gt;
+        &lt;option>Brokkoli&lt;/option&gt;
+  &lt;/optgroup&gt;
+&lt;/select&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<select>
+  <optgroup label="Obst">
+    <option>Apfel</option>
+    <option>Banane</option>
+  </optgroup>
+  <optgroup label="Gemüse">
+    <option>Karotte</option>
+    <option>Brokkoli</option>
+  </optgroup>
+</select>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Formulare">
 <h3>&lt;option&gt; - Formulare</h3>
-<p></p>
+<p>Das HTML-Kommando &lt;option&gt; wird verwendet, um eine einzelne Auswahlmöglichkeit in einem Dropdown-Menü (&lt;select&gt;) oder 
+einer Auswahlliste zu definieren.</p>
+<p>Wichtige Attribute von &lt;option&gt;:</p>
+<ul>
+<li>value	Der tatsächliche Wert, der beim Absenden des Formulars übermittelt wird.</li>
+<li>selected	Diese Option ist voreingestellt ausgewählt, wenn das Formular geladen wird.</li>
+<li>disabled	Die Option ist nicht auswählbar (ausgegraut).</li>
+<li>label	Optionaler alternativer Text für Anzeigezwecke</li>
+</ul>
+
 <p style="font-weight: bold;">Zweck von &lt;option&gt;:</p>
+<p>Es definiert eine Option, die der Benutzer im Formular auswählen kann – meist innerhalb eines &lt;select&gt;-Elements oder 
+    innerhalb eines &lt;optgroup&gt;.</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;select>
+  &lt;option value="auto" selected&gt;Automatisch&lt;/option&gt;
+  &lt;option value="light"&gt;Hell&lt;/option&gt;
+  &lt;option value="dark" disabled&gt;Dunkel (nicht verfügbar)&lt;/option&gt;
+&lt;/select&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<select>
+  <option value="auto" selected>Automatisch</option>
+  <option value="light">Hell</option>
+  <option value="dark" disabled>Dunkel (nicht verfügbar)</option>
+</select>
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Formulare">
 <h3>&lt;output&gt; - Formulare</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;output&gt;:</p>
+<p>Das HTML-Tag &lt;output&lt; wird verwendet, um das Ergebnis einer Berechnung oder Benutzeraktion anzuzeigen. Es gehört zu den 
+    sogenannten Formular-Tags in HTML5 und dient dazu, dynamische Ausgaben darzustellen – typischerweise in Verbindung mit 
+    JavaScript oder interaktiven Formularelementen wie &lt;input&lt;, &lt;meter&lt;, &lt;progress&lt;, usw.. Du brauchst es nicht, wenn du keine 
+    echte Berechnung oder Ergebnisanzeige im HTML-Dokument brauchst und wenn du lediglich eine stilisierte Anzeige willst, 
+    reicht oft ein &lt;div&lt; oder &lt;span&lt;. Du solltest &lt;output&lt; nutzen, wenn du dynamische Werte in einem Formular anzeigen willst 
+    (z. B. Berechnungen) und wenn du semantisch korrektes HTML schreiben willst: &lt;output> signalisiert explizit, dass hier ein 
+    Ergebnis dargestellt wird – statt einfach nur &lt;span&lt; zu verwenden.
+</p>
+<p>Attribute:</p>
+<ul>
+<li>name: Name des Output-Feldes (wichtig bei Formularen).</li>
+<li>for: Eine durch Leerzeichen getrennte Liste von IDs von Elementen, auf die sich das Ergebnis bezieht.</li>
+<li>form: Falls das &lt;output&lt;-Element außerhalb des &lt;form&lt; steht, kann man hier eine ID eines Formulars angeben, mit dem es verbunden ist.</li>
+</ul>
+
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;form oninput="result.value = parseInt(a.value) + parseInt(b.value)"&lt;
+  &lt;input type="number" name="a"&lt; +
+  &lt;input type="number" name="b"&lt; =
+  &lt;output name="result"&lt;&lt;/output&lt;
+&lt;/form&lt;</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<form oninput="result.value = parseInt(a.value) + parseInt(b.value)">
+  <input type="number" name="a"> +
+  <input type="number" name="b"> =
+  <output name="result"></output>
+</form>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Text & Inhalt">
 <h3>&lt;p&gt; - Text & Inhalt</h3>
-<p></p>
-<p style="font-weight: bold;">Zweck von &lt;p&gt;:</p>
+<p>Das HTML-Tag &lt;p&lt; steht für "paragraph" (Absatz) und wird verwendet, um Textabsätze in einem HTML-Dokument darzustellen. Es gehört zu 
+    den grundlegendsten und am häufigsten verwendeten Tags im Web. Die Absätze dürfen keine Blockelemente enthalten, wie z. B. &lt;div&lt; oder &lt;h1&lt;. 
+    Das ist laut Spezifikation nicht erlaubt. Du kannst Inline-Elemente wie &lt;strong&lt;, &lt;em&lt;, &lt;a> usw. innerhalb eines &lt;p&lt;-Tags verwenden. Ein leeres 
+    &lt;p> zeigt in vielen Browsern einfach nur Leerraum an, wird aber teils ignoriert.</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>Dies ist ein Absatz in HTML.</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<p>Dies ist ein Absatz in HTML.</p>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="Veraltet">
-<h3>&lt;param&gt; - Veraltet</h3>
-<p></p>
+<div class="artikel" data-group="Multimedia">
+<h3>&lt;param&gt; (Veraltet) - Multimedia</h3>
+<p>
+Das HTML-Tag &lt;param&gt; wird verwendet, um Parameter an ein eingebettetes Objekt zu übergeben – typischerweise in Verbindung mit dem &lt;object&gt;-Element.
+Das &lt;param&gt;-Tag stammt aus einer Zeit, in der Inhalte wie Flash, Java-Applets oder ActiveX-Objekte üblich waren. Heute ist es größtenteils veraltet, da:
+Flash & Co. kaum noch verwendet werden, &lt;object&gt; nur noch selten genutzt wird, moderne Webtechnologien wie &lt;video&gt;, &lt;audio&gt;, &lt;embed&gt; oder JavaScript DOM-APIs 
+diese Aufgaben übernehmen. </p>
+
 <p style="font-weight: bold;">Zweck von &lt;param&gt;:</p>
+<p>Es definiert Konfigurationswerte oder Einstellungen, die ein eingebettetes Objekt (wie ein Plugin oder eine Multimedia-Komponente) zur Laufzeit verwenden kann.</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;object data="sample_640x360.swf" type="application/x-shockwave-flash"&gt;
+    &lt;param name="autoplay" value="true"&gt;
+    &lt;param name="quality" value="high"&gt;
+&lt;/object&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<object data="sample_640x360.swf" type="application/x-shockwave-flash">
+  <param name="autoplay" value="true">
+  <param name="quality" value="high">
+</object>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Multimedia">
 <h3>&lt;picture&gt; - Multimedia</h3>
-<p></p>
+<p>Das HTML-Tag <picture> wird verwendet, um responsive Bilder bereitzustellen – also Bilder, die sich an verschiedene Bildschirmgrößen, 
+Auflösungen oder Formate (z. B. WebP vs. JPEG) anpassen. Es ist besonders nützlich, wenn du:</p>
+<ul>
+<li>unterschiedliche Bilder für Mobilgeräte und Desktops anzeigen willst</li>
+<li>moderne Bildformate wie WebP oder AVIF nutzen willst, aber Fallbacks für ältere Browser brauchst</li>
+<li>Bilder auf Basis von Media Queries laden möchtest</li>
+</ul>
+
+<p>Tag/Attribut	Bedeutung</p>
+<table>
+<tr>
+    <td>&lt;picture&gt;</td>
+    <td>Container für mehrere Bildquellen</td>
+</tr>
+<tr>
+    <td>srcset</td>
+    <td>Die eigentliche Bilddatei für diese Quelle</td>
+</tr>
+<tr>
+    <td>type</td>
+    <td>MIME-Typ (z. B. image/webp) – hilft dem Browser bei der Auswahl</td>
+</tr>
+<tr>
+    <td>media</td>
+    <td>(optional)	CSS-Media Query, z. B. (min-width: 800px)</td>
+</tr>
+<tr>
+    <td>&lt;img&gt;</td>
+    <td>Das Fallback-Bild, das immer geladen wird, wenn keine <source> passt</td>
+</tr>
+</table>
+
 <p style="font-weight: bold;">Zweck von &lt;picture&gt;:</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;picture&gt;
+  &lt;source srcset="großes-bild.jpg" media="(min-width: 800px)"&gt;
+  &lt;source srcset="kleines-bild.jpg" media="(max-width: 799px)"&gt;
+  &lt;img src="kleines-bild.jpg" alt="Responsive Bild&gt;
+&lt;/picture&gt;</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<picture>
+  <source srcset="großes-bild.jpg" media="(min-width: 800px)">
+  <source srcset="kleines-bild.jpg" media="(max-width: 799px)">
+  <img src="kleines-bild.jpg" alt="Responsive Bild">
+</picture>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Text & Inhalt">
@@ -2161,7 +2634,6 @@ Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.
             });
         });
     </script>
-
 </body>
 
 </html>
