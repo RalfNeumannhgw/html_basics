@@ -1,0 +1,83 @@
+/* Körper- und Schriftstil */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+h1,
+h1 + p {
+    max-width: 900px;
+    margin: 0 auto 20px; /* zentriert und mit unterem Abstand */
+    padding: 0 20px; /* optional, für etwas Innenabstand */
+}
+
+/* Artikel-Container optisch aufwerten */
+.artikel {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Überschriften anpassen */
+.artikel h3 {
+    margin-top: 0;
+    color: #007acc;
+    font-size: 20px;
+}
+
+/* Filter-Buttons */
+#filter-buttons button {
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 8px 12px;
+    margin: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+#filter-buttons button:hover {
+    background-color: #005fa3;
+}
+
+/* Responsive Grid Layout für Artikel (optional) */
+@media (min-width: 768px) {
+    body {
+        padding: 40px;
+    }
+    .artikel {
+        max-width: 900px; /* erhöhte Breite */
+        margin-left: auto;
+        margin-right: auto;
+    }
+    /* Container für Überschrift & Buttons neu definieren */
+    #filter-buttons {
+        max-width: 900px;
+        margin: 0 auto 20px;
+    }
+}
+
+.bild-container {
+    position: relative;
+    display: inline-block;
+}
+
+.svg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+a,
+li,
+p,
+td {
+    font-size: 15px;
+}
+

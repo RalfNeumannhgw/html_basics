@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <title>HTML-Kommandos</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
 </head>
 
 <body>
@@ -215,14 +215,14 @@ Ihr Browser unterstützt kein Java.
             Attribute sind controls, autoplay, loop, muted, preload und src</p>
         <p style="font-weight: bold;">Code:</p>
         <pre><code>&lt;audio controls&gt;
-&lt;source src="just-relax-11157.mp3" type="audio/mpeg"&gt;
+&lt;source src="/assets/media/just-relax-11157.mp3" type="audio/mpeg"&gt;
 Ihr Browser unterstützt das Audio-Element nicht.
 &lt;/audio&gt;
 </pre></code>
 
         <p style="font-weight: bold;">Ergebnis:</p>
         <audio controls>
-            <source src="just-relax-11157.mp3" type="audio/mpeg">
+            <source src="/assets/media/just-relax-11157.mp3" type="audio/mpeg">
             Ihr Browser unterstützt das Audio-Element nicht.
         </audio>
     </div>
@@ -547,7 +547,7 @@ body {
 <p style="font-weight: bold;">Ergebnis:</p>
 <center>
     <h2>Willkommen auf meiner Seite</h2>
-    <img src="Burger.png" alt="Beispielbild" width="300">
+    <img src="/assets/media/Burger.png" alt="Beispielbild" width="300">
 </center>
 
     </div>
@@ -577,6 +577,7 @@ body {
 </pre></code>
 
     <p style="font-weight: bold;">Ergebnis:</p>
+    <p>Verwenden Sie <code>sudo apt update</code>, um die Paketliste zu aktualisieren.</p>
     </div>
 
     <!-------------------------------- New Artikel ---------------------------------------->
@@ -941,11 +942,11 @@ body {
                 <tr><td>video/webm</td><td>WebM-Videodatei</td></tr>
             </table>
         <p style="font-weight: bold;">Code:</p>
-<pre><code>&lt;embed src="Burger.png" type="image/png" width="600"&gt;
+<pre><code>&lt;embed src="/assets/media/Burger.png" type="image/png" width="600"&gt;
 </pre></code>
 
     <p style="font-weight: bold;">Ergebnis:</p>
-    <embed src="Burger.png" type="image/png" width="200">
+    <embed src="/assets/media/Burger.png" type="image/png" width="200">
     </div>
     <!-------------------------------- New Artikel ---------------------------------------->
     <div class="artikel" data-group="Formulare">
@@ -1380,10 +1381,10 @@ Es wird für Text verwendet, der aus stilistischen oder typografischen Gründen 
     falls das Bild nicht geladen werden kann</p>
 
 <p style="font-weight: bold;">Code:</p>
-<pre><code>&lt;img src="Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300"&gt;
+<pre><code>&lt;img src="/assets/media/Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300"&gt;
 </code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
-<img src="Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300">
+<img src="/assets/media/Burger.png" alt="Ein leckerer Burger" loading="lazy" title="Ein leckerer Burger" width="300">
 
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
@@ -1661,13 +1662,25 @@ Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.</p>
 
 <p style="font-weight: bold;">Code:</p>
 <pre><code>&lt;div class="bild-container"&gt;
-  &lt;img src="Burger.png" alt="Burger" width="300" height="231"&gt;
+  &lt;img src="/assets/media/Burger.png" alt="Burger" width="300" height="231"&gt;
   &lt;svg class="svg-overlay" width="300" height="231"&gt;
     &lt;rect x="40" y="130" width="80" height="30" fill="rgba(0, 0, 255, 0.3)" stroke="blue" stroke-width="2" /&gt;
   &lt;/svg&gt;
 &lt;/div&gt;
 
-&lt;img src="Burger.png" usemap="#karte" alt="Burger" width="300" height="231"&gt;
+.bild-container {
+    position: relative;
+    display: inline-block;
+}
+
+.svg-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+}
+
+&lt;img src="/assets/media/Burger.png" usemap="#karte" alt="Burger" width="300" height="231"&gt;
 &lt;map name="karte"&gt;
   &lt;area shape="rect" coords="40,130,120,160" href="Tomate.html" alt="Tomate&gt;
 &lt;/map&gt;
@@ -1677,13 +1690,13 @@ Das sorgt für eine visuelle Gruppierung und Orientierung für den Nutzer.</p>
 <p style="font-weight: bold;">Ergebnis:</p>
 
 <div class="bild-container">
-  <img src="Burger.png" alt="Burger" width="300" height="231">
+  <img src="/assets/media/Burger.png" alt="Burger" width="300" height="231">
   <svg class="svg-overlay" width="300" height="231">
     <rect x="40" y="130" width="80" height="30" fill="rgba(0, 0, 255, 0.3)" stroke="blue" stroke-width="2" />
   </svg>
 </div>
 
-<img src="Burger.png" usemap="#karte" alt="Burger" width="300" height="231">
+<img src="/assets/media/Burger.png" usemap="#karte" alt="Burger" width="300" height="231">
 <map name="karte">
   <area shape="rect" coords="40,130,120,160" href="Tomate.html" alt="Tomate">
 </map>
@@ -1908,8 +1921,8 @@ angezeigt, beeinflusst aber das Verhalten der Seite im Hintergrund maßgeblich.<
 
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
-<div class="artikel" data-group="Verlinkungen">
-<h3>&lt;nav&gt; - Verlinkungen</h3>
+<div class="artikel" data-group="Verlinkung">
+<h3>&lt;nav&gt; - Verlinkung</h3>
 <p>Das HTML-Element &lt;nav&gt; wird verwendet, um einen Navigationsbereich innerhalb einer Webseite zu kennzeichnen. Es ist ein 
 semantisches Element und hilft Browsern, Screenreadern und Suchmaschinen, den Inhalt besser zu verstehen. Das &lt;nav&gt;-Element 
 ist wichtig für strukturierte, zugängliche Websites. Es macht deinen Code semantisch klarer und hilft Nutzern wie Maschinen zu verstehen: "Hier geht es um Navigation."</p>
@@ -2013,12 +2026,12 @@ verschiedene Medientypen einbetten willst; Fallback-Inhalte anbieten möchtest, 
     </ul>
 <p style="font-weight: bold;">Code:</p>
 <pre><code>&lt;object data="bild.png" type="image/png width="300" height="231""&gt;
-  &lt;img src="Burger.png" alt="Alternativbild" width="300" height="231"&gt;
+  &lt;img src="/assets/media/Burger.png" alt="Alternativbild" width="300" height="231"&gt;
 &lt;/object&gt;
 </code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
 <object data="bild.png" type="image/png" width="300" height="231">
-  <img src="Burger.png" alt="Alternativbild" width="300" height="231">
+  <img src="/assets/media/Burger.png" alt="Alternativbild" width="300" height="231">
 </object>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
@@ -2169,13 +2182,13 @@ diese Aufgaben übernehmen. </p>
 <p style="font-weight: bold;">Zweck von &lt;param&gt;:</p>
 <p>Es definiert Konfigurationswerte oder Einstellungen, die ein eingebettetes Objekt (wie ein Plugin oder eine Multimedia-Komponente) zur Laufzeit verwenden kann.</p>
 <p style="font-weight: bold;">Code:</p>
-<pre><code>&lt;object data="sample_640x360.swf" type="application/x-shockwave-flash"&gt;
+<pre><code>&lt;object data="/assets/media/sample_640x360.swf" type="application/x-shockwave-flash"&gt;
     &lt;param name="autoplay" value="true"&gt;
     &lt;param name="quality" value="high"&gt;
 &lt;/object&gt;
 </code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
-<object data="sample_640x360.swf" type="application/x-shockwave-flash">
+<object data="/assets/media/sample_640x360.swf" type="application/x-shockwave-flash">
   <param name="autoplay" value="true">
   <param name="quality" value="high">
 </object>
@@ -2184,7 +2197,9 @@ diese Aufgaben übernehmen. </p>
 <div class="artikel" data-group="Multimedia">
 <h3>&lt;picture&gt; - Multimedia</h3>
 <p>Das HTML-Tag <picture> wird verwendet, um responsive Bilder bereitzustellen – also Bilder, die sich an verschiedene Bildschirmgrößen, 
-Auflösungen oder Formate (z. B. WebP vs. JPEG) anpassen. Es ist besonders nützlich, wenn du:</p>
+Auflösungen oder Formate (z. B. WebP vs. JPEG) anpassen. Die Vorteile sind das Responsive Design ohne JavaScript, Optimierte Ladezeiten 
+durch kleinere oder effizientere Bilder auf passenden Geräten und ein modernes Format mit Fallback – z. B. WebP oder AVIF für moderne 
+Browser, JPG/PNG für ältere. Es ist besonders nützlich, wenn du:</p>
 <ul>
 <li>unterschiedliche Bilder für Mobilgeräte und Desktops anzeigen willst</li>
 <li>moderne Bildformate wie WebP oder AVIF nutzen willst, aber Fallbacks für ältere Browser brauchst</li>
@@ -2215,37 +2230,91 @@ Auflösungen oder Formate (z. B. WebP vs. JPEG) anpassen. Es ist besonders nü
 </tr>
 </table>
 
-<p style="font-weight: bold;">Zweck von &lt;picture&gt;:</p>
 <p style="font-weight: bold;">Code:</p>
 <pre><code>&lt;picture&gt;
-  &lt;source srcset="großes-bild.jpg" media="(min-width: 800px)"&gt;
-  &lt;source srcset="kleines-bild.jpg" media="(max-width: 799px)"&gt;
-  &lt;img src="kleines-bild.jpg" alt="Responsive Bild&gt;
+  &lt;source srcset="/assets/media/Affe_big.webp" media="(min-width: 800px)"&gt;
+  &lt;source srcset="/assets/media/Affe_small.webp" media="(max-width: 799px)"&gt;
+  &lt;img src="/assets/media/Affe_big.jpg" alt="Responsive Bild&gt;
 &lt;/picture&gt;</code></pre>
-<p style="font-weight: bold;">Ergebnis:</p>
+<p style="font-weight: bold;">Ergebnis (Bild passt sich der Größe des Browserfensters an):</p>
 <picture>
-  <source srcset="großes-bild.jpg" media="(min-width: 800px)">
-  <source srcset="kleines-bild.jpg" media="(max-width: 799px)">
-  <img src="kleines-bild.jpg" alt="Responsive Bild">
+  <source srcset="/assets/media/Affe_big.webp" media="(min-width: 800px)">
+  <source srcset="/assets/media/Affe_small.webp" media="(max-width: 799px)">
+  <img src="/assets/media/Affe_big.jpg" alt="Responsive Bild">
 </picture>
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Text & Inhalt">
 <h3>&lt;pre&gt; - Text & Inhalt</h3>
-<p></p>
+<p>Das HTML-Tag &lt;pre> steht für "preformatted text" (vorausformatierter Text) und wird verwendet, um Text 
+  genau so darzustellen, wie er im HTML-Code geschrieben ist – inklusive Leerzeichen, Tabs und Zeilenumbrüchen.</p>
 <p style="font-weight: bold;">Zweck von &lt;pre&gt;:</p>
+<ul>
+  <li>Bewahrt die ursprüngliche Formatierung (z. B. bei Quellcode, ASCII-Art, Gedichten).</li>
+  <li>Nutzt monospaced Schriftarten (z. B. Courier) – ideal für Technik-Inhalte.</li>
+  <li>Wird oft in Kombination mit &lt;code> verwendet, um Programmcode darzustellen.</li>
+</ul>
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;pre&gt;
+Zeile 1
+  Zeile 2 mit Einrückung
+Zeile 3
+&lt;/pre&gt;
+
+&lt;pre&gt;&lt;code&gt;const x = 42;&lt;/code&gt;<&lt;/pre&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<pre>
+Zeile 1
+  Zeile 2 mit Einrückung
+Zeile 3
+</pre>
+<pre><code>const x = 42;</code></pre>
+
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Formulare">
 <h3>&lt;progress&gt; - Formulare</h3>
-<p></p>
+<p>Das HTML-Tag &lt;progress&gt; wird verwendet, um einen Fortschrittsbalken darzustellen – z. B. für Ladeprozesse, 
+  Dateiuploads oder andere Aufgaben, bei denen man den Fortschritt in Prozent oder als Wert anzeigen möchte.</p>
 <p style="font-weight: bold;">Zweck von &lt;progress&gt;:</p>
+Zeigt visuell den Fortschritt einer Aufgabe an
+
+Ideal für Prozesse mit bekanntem Endwert (z. B. 0 bis 100)
+
+Unterstützt durch alle modernen Browser
 <p style="font-weight: bold;">Code:</p>
-<pre><code></code></pre>
+<pre><code>&lt;progress id="loadBar" value="0" max="100"&gt;&lt;/progress&gt;
+&lt;script&gt;
+  let progress = document.getElementById("loadBar");
+  let val = 0;
+  let interval = setInterval(() => {
+    if (val <= 100) {
+      progress.value = val;
+      val++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 500);
+&lt;/script&gt;
+</code></pre>
 <p style="font-weight: bold;">Ergebnis:</p>
+<progress id="loadBar" value="0" max="100"></progress>
+<script>
+  let progress = document.getElementById("loadBar");
+  let val = 0;
+  let interval = setInterval(() => {
+    if (val <= 100) {
+      progress.value = val;
+      val++;
+    } else {
+      clearInterval(interval);
+    }
+  }, 500);
+</script>
+
+
 </div>
 <!-------------------------------- New Artikel ---------------------------------------->
 <div class="artikel" data-group="Text & Inhalt">
